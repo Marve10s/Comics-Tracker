@@ -1,0 +1,78 @@
+[
+  {
+    "type": "list",
+    "name": "Marvel Omnibus Discounts \u2014 InStockTrades",
+    "urls": [
+      "https://www.instocktrades.com/search?pg=1&sf=discount&ps=true&title=omnibus&publisher=marvel&writer=&artist=&cover=",
+      "https://www.instocktrades.com/search?pg=2&sf=discount&ps=true&title=omnibus&publisher=marvel&writer=&artist=&cover="
+    ],
+    "itemSelector": "div.item",
+    "baseUrl": "https://www.instocktrades.com",
+    "fields": {
+      "title": "div.title a",
+      "url": "div.title a@href",
+      "discount": "div.discount",
+      "price": "div.price"
+    },
+    "sections": [
+      "Wolverine",
+      "X-Men",
+      "X-Factor",
+      "X-Force",
+      "Spider-Man",
+      "Spider-Woman",
+      "Avengers",
+      "Iron Man",
+      "Captain America",
+      "Thor",
+      "Hulk",
+      "Daredevil",
+      "Fantastic Four",
+      "Black Panther",
+      "Doctor Strange",
+      "Deadpool",
+      "Guardians",
+      "Punisher",
+      "Moon Knight",
+      "Venom"
+    ]
+  },
+  {
+    "type": "list",
+    "name": "Marvel HC Discounts \u2014 InStockTrades",
+    "urls": [
+      "https://www.instocktrades.com/search?pg=1&sf=discount&ps=true&title=hc&publisher=marvel&writer=&artist=&cover=",
+      "https://www.instocktrades.com/search?pg=2&sf=discount&ps=true&title=hc&publisher=marvel&writer=&artist=&cover="
+    ],
+    "itemSelector": "div.item",
+    "baseUrl": "https://www.instocktrades.com",
+    "fields": {
+      "title": "div.title a",
+      "url": "div.title a@href",
+      "discount": "div.discount",
+      "price": "div.price"
+    },
+    "sections": [
+      "Wolverine",
+      "X-Men",
+      "X-Factor",
+      "X-Force",
+      "Spider-Man",
+      "Spider-Woman",
+      "Avengers",
+      "Iron Man",
+      "Captain America",
+      "Thor",
+      "Hulk",
+      "Daredevil",
+      "Fantastic Four",
+      "Black Panther",
+      "Doctor Strange",
+      "Deadpool",
+      "Guardians",
+      "Punisher",
+      "Moon Knight",
+      "Venom"
+    ]
+  }
+]

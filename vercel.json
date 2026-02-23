@@ -1,8 +1,0 @@
-{
-  "functions": {
-    "api/monitor.py": {
-      "runtime": "python3.12",
-      "maxDuration": 30
-    }
-  }
-}

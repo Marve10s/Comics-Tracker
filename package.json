@@ -1,0 +1,18 @@
+{
+  "name": "price-monitor",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test:run": "tsx src/monitor.ts"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0",
+    "effect": "^3.12.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  }
+}

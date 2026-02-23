@@ -1,22 +1,152 @@
 [
   {
-    "name": "Example eBay Listing",
-    "url": "https://www.ebay.com/itm/REPLACE_WITH_ITEM_ID",
-    "store": "ebay",
-    "selectors": {
-      "title": ".x-item-title__mainTitle",
-      "price": ".x-price-primary span[itemprop='price']",
-      "availability": ".d-quantity__availability"
-    }
+    "type": "list",
+    "name": "Marvel Omnibus Discounts — InStockTrades",
+    "urls": [
+      "https://www.instocktrades.com/search?pg=1&sf=discount&ps=true&title=omnibus&publisher=marvel&writer=&artist=&cover=",
+      "https://www.instocktrades.com/search?pg=2&sf=discount&ps=true&title=omnibus&publisher=marvel&writer=&artist=&cover="
+    ],
+    "itemSelector": "div.item",
+    "baseUrl": "https://www.instocktrades.com",
+    "fields": {
+      "title": "div.title a",
+      "url": "div.title a@href",
+      "discount": "div.discount",
+      "price": "div.price"
+    },
+    "sections": [
+      "Wolverine", "X-Men", "X-Factor", "X-Force",
+      "Spider-Man", "Spider-Woman",
+      "Avengers", "Iron Man", "Captain America", "Thor", "Hulk",
+      "Daredevil", "Fantastic Four", "Black Panther", "Doctor Strange",
+      "Deadpool", "Guardians", "Punisher", "Moon Knight", "Venom"
+    ]
   },
   {
-    "name": "Example InStockTrades Product",
-    "url": "https://www.instocktrades.com/products/REPLACE_WITH_PRODUCT_SLUG",
-    "store": "instocktrades",
-    "selectors": {
-      "title": "h1.product-title",
-      "price": "span.price",
-      "availability": "span.availability, .product-availability"
-    }
+    "type": "list",
+    "name": "Marvel HC Discounts — InStockTrades",
+    "urls": [
+      "https://www.instocktrades.com/search?pg=1&sf=discount&ps=true&title=hc&publisher=marvel&writer=&artist=&cover=",
+      "https://www.instocktrades.com/search?pg=2&sf=discount&ps=true&title=hc&publisher=marvel&writer=&artist=&cover="
+    ],
+    "itemSelector": "div.item",
+    "baseUrl": "https://www.instocktrades.com",
+    "fields": {
+      "title": "div.title a",
+      "url": "div.title a@href",
+      "discount": "div.discount",
+      "price": "div.price"
+    },
+    "sections": [
+      "Wolverine", "X-Men", "X-Factor", "X-Force",
+      "Spider-Man", "Spider-Woman",
+      "Avengers", "Iron Man", "Captain America", "Thor", "Hulk",
+      "Daredevil", "Fantastic Four", "Black Panther", "Doctor Strange",
+      "Deadpool", "Guardians", "Punisher", "Moon Knight", "Venom"
+    ]
+  },
+  {
+    "type": "list",
+    "name": "Marvel Omnibus — eBay Newly Listed BIN under $200",
+    "urls": [
+      "https://www.ebay.com/sch/i.html?_nkw=omnibus&_sacat=0&_from=R40&LH_BIN=1&rt=nc&LH_PrefLoc=3&Publisher=Marvel%2520Comics&_sop=10&_pgn=1",
+      "https://www.ebay.com/sch/i.html?_nkw=omnibus&_sacat=0&_from=R40&LH_BIN=1&rt=nc&LH_PrefLoc=3&Publisher=Marvel%2520Comics&_sop=10&_pgn=2"
+    ],
+    "itemSelector": "li[data-listingid]",
+    "idAttribute": "data-listingid",
+    "urlTemplate": "https://www.ebay.com/itm/{id}",
+    "maxPrice": 200,
+    "fields": {
+      "title": "a[aria-label^='watch ']@aria-label",
+      "price": ".s-card__price"
+    },
+    "fieldTransforms": {
+      "title": "stripPrefix:watch "
+    },
+    "sections": [
+      "Wolverine", "X-Men", "X-Factor", "X-Force",
+      "Spider-Man", "Spider-Woman",
+      "Avengers", "Iron Man", "Captain America", "Thor", "Hulk",
+      "Daredevil", "Fantastic Four", "Black Panther", "Doctor Strange",
+      "Deadpool", "Guardians", "Punisher", "Moon Knight", "Venom"
+    ]
+  },
+  {
+    "type": "list",
+    "name": "Marvel HC — eBay Newly Listed BIN under $200",
+    "urls": [
+      "https://www.ebay.com/sch/i.html?_nkw=hc&_sacat=0&_from=R40&LH_BIN=1&rt=nc&LH_PrefLoc=3&Publisher=Marvel%2520Comics&_sop=10&_pgn=1",
+      "https://www.ebay.com/sch/i.html?_nkw=hc&_sacat=0&_from=R40&LH_BIN=1&rt=nc&LH_PrefLoc=3&Publisher=Marvel%2520Comics&_sop=10&_pgn=2"
+    ],
+    "itemSelector": "li[data-listingid]",
+    "idAttribute": "data-listingid",
+    "urlTemplate": "https://www.ebay.com/itm/{id}",
+    "maxPrice": 200,
+    "fields": {
+      "title": "a[aria-label^='watch ']@aria-label",
+      "price": ".s-card__price"
+    },
+    "fieldTransforms": {
+      "title": "stripPrefix:watch "
+    },
+    "sections": [
+      "Wolverine", "X-Men", "X-Factor", "X-Force",
+      "Spider-Man", "Spider-Woman",
+      "Avengers", "Iron Man", "Captain America", "Thor", "Hulk",
+      "Daredevil", "Fantastic Four", "Black Panther", "Doctor Strange",
+      "Deadpool", "Guardians", "Punisher", "Moon Knight", "Venom"
+    ]
+  },
+  {
+    "type": "list",
+    "name": "Marvel Omnibus Lot — eBay Newly Listed BIN",
+    "urls": [
+      "https://www.ebay.com/sch/i.html?_nkw=marvel+omnibus+lot&LH_BIN=1&rt=nc&LH_PrefLoc=3&_sop=10&_pgn=1",
+      "https://www.ebay.com/sch/i.html?_nkw=marvel+omnibus+lot&LH_BIN=1&rt=nc&LH_PrefLoc=3&_sop=10&_pgn=2"
+    ],
+    "itemSelector": "li[data-listingid]",
+    "idAttribute": "data-listingid",
+    "urlTemplate": "https://www.ebay.com/itm/{id}",
+    "fields": {
+      "title": "a[aria-label^='watch ']@aria-label",
+      "price": ".s-card__price"
+    },
+    "fieldTransforms": {
+      "title": "stripPrefix:watch "
+    },
+    "sections": [
+      "Wolverine", "X-Men", "X-Factor", "X-Force",
+      "Spider-Man", "Spider-Woman",
+      "Avengers", "Iron Man", "Captain America", "Thor", "Hulk",
+      "Daredevil", "Fantastic Four", "Black Panther", "Doctor Strange",
+      "Deadpool", "Guardians", "Punisher", "Moon Knight", "Venom"
+    ]
+  },
+  {
+    "type": "list",
+    "name": "Marvel HC Lot — eBay Newly Listed BIN",
+    "urls": [
+      "https://www.ebay.com/sch/i.html?_nkw=marvel+hc+lot&LH_BIN=1&rt=nc&LH_PrefLoc=3&_sop=10&_pgn=1",
+      "https://www.ebay.com/sch/i.html?_nkw=marvel+hc+lot&LH_BIN=1&rt=nc&LH_PrefLoc=3&_sop=10&_pgn=2",
+      "https://www.ebay.com/sch/i.html?_nkw=marvel+hardcover+lot&LH_BIN=1&rt=nc&LH_PrefLoc=3&_sop=10&_pgn=1",
+      "https://www.ebay.com/sch/i.html?_nkw=marvel+hardcover+lot&LH_BIN=1&rt=nc&LH_PrefLoc=3&_sop=10&_pgn=2"
+    ],
+    "itemSelector": "li[data-listingid]",
+    "idAttribute": "data-listingid",
+    "urlTemplate": "https://www.ebay.com/itm/{id}",
+    "fields": {
+      "title": "a[aria-label^='watch ']@aria-label",
+      "price": ".s-card__price"
+    },
+    "fieldTransforms": {
+      "title": "stripPrefix:watch "
+    },
+    "sections": [
+      "Wolverine", "X-Men", "X-Factor", "X-Force",
+      "Spider-Man", "Spider-Woman",
+      "Avengers", "Iron Man", "Captain America", "Thor", "Hulk",
+      "Daredevil", "Fantastic Four", "Black Panther", "Doctor Strange",
+      "Deadpool", "Guardians", "Punisher", "Moon Knight", "Venom"
+    ]
   }
 ]
