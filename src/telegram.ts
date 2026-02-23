@@ -13,20 +13,26 @@ export const sendMessage = (text: string) =>
     }
 
     yield* Effect.tryPromise({
-      try: () =>
-        fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            chat_id: chatId,
-            text,
-            parse_mode: "HTML",
-            disable_web_page_preview: false,
-          }),
-        }).then((r) => {
-          if (!r.ok) throw new Error(`Telegram API error: ${r.status}`)
-          return r.json()
-        }),
+      try: async () => {
+        const body = JSON.stringify({
+          chat_id: chatId,
+          text,
+          parse_mode: "HTML",
+          disable_web_page_preview: false,
+        })
+        const opts = { method: "POST", headers: { "Content-Type": "application/json" }, body }
+        const url = `https://api.telegram.org/bot${token}/sendMessage`
+
+        let r = await fetch(url, opts)
+        if (r.status === 429) {
+          const json = (await r.json()) as { parameters?: { retry_after?: number } }
+          const wait = (json.parameters?.retry_after ?? 1) * 1000 + 200
+          await new Promise((res) => setTimeout(res, wait))
+          r = await fetch(url, opts)
+        }
+        if (!r.ok) throw new Error(`Telegram API error: ${r.status}`)
+        return r.json()
+      },
       catch: (cause) => new NotifyError({ cause }),
     })
   })

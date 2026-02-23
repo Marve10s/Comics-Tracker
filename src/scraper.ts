@@ -23,8 +23,6 @@ export const fetchPage = (url: string): Effect.Effect<string, FetchError> =>
     catch: (cause) => new FetchError({ url, cause }),
   })
 
-// ── Single-page field extraction ───────────────────────────────────────────
-
 export const extractFields = (
   html: string,
   selectors: Record<string, string>,
@@ -42,43 +40,19 @@ export const extractFields = (
     catch: (cause) => new ParseError({ cause }),
   })
 
-// ── Multi-item list extraction ─────────────────────────────────────────────
-
 export interface ScrapedItem {
   id: string
-  /** Always resolved — either from urlTemplate or from the extracted url field. */
   url: string
   fields: Record<string, string | null>
 }
 
 export interface ExtractOptions {
   baseUrl?: string
-  /**
-   * Attribute on the item container element to use as the stable ID.
-   * If omitted, the ID is derived from the `/products/<code>/` segment of the url field.
-   * Example: "data-listingid" for eBay.
-   */
   idAttribute?: string
-  /**
-   * URL template with `{id}` placeholder, e.g. "https://www.ebay.com/itm/{id}".
-   * When set, overrides the url field for building the item URL.
-   */
   urlTemplate?: string
-  /**
-   * Post-extraction transforms keyed by field name.
-   * Currently supports: `"stripPrefix:<prefix>"`.
-   * Example: { "title": "stripPrefix:watch " }
-   */
   fieldTransforms?: Record<string, string>
 }
 
-/**
- * Extracts a list of items from a listing/search page.
- *
- * Field selectors support a `selector@attrName` suffix to extract an HTML
- * attribute instead of text content.
- * Example: `"a.title@href"`, `"a[aria-label^='watch ']@aria-label"`
- */
 export const extractItemList = (
   html: string,
   itemSelector: string,
@@ -94,9 +68,7 @@ export const extractItemList = (
       $(itemSelector).each((_, el) => {
         const fields: Record<string, string | null> = {}
 
-        // ── Extract fields ───────────────────────────────────────────────
         for (const [field, selectorRaw] of Object.entries(fieldSelectors)) {
-          // Split on the LAST @ to separate selector from attribute name
           const attrMatch = /^(.+)@([\w-]+)$/.exec(selectorRaw)
           if (attrMatch) {
             const [, selector, attr] = attrMatch
@@ -115,7 +87,6 @@ export const extractItemList = (
           }
         }
 
-        // ── Apply transforms ─────────────────────────────────────────────
         if (fieldTransforms) {
           for (const [field, transform] of Object.entries(fieldTransforms)) {
             const val = fields[field]
@@ -127,7 +98,6 @@ export const extractItemList = (
           }
         }
 
-        // ── Resolve ID ───────────────────────────────────────────────────
         let id: string | null = null
         if (idAttribute) {
           id = $(el).attr(idAttribute) ?? null
@@ -137,7 +107,6 @@ export const extractItemList = (
           id = m?.[1] ?? null
         }
 
-        // ── Resolve URL ──────────────────────────────────────────────────
         let url = ""
         if (urlTemplate && id) {
           url = urlTemplate.replace("{id}", id)

@@ -11,8 +11,6 @@ import {
 } from "./scraper.js"
 import { sendMessage } from "./telegram.js"
 
-// ── Config types ───────────────────────────────────────────────────────────
-
 interface FieldsMonitor {
   type?: "fields"
   name: string
@@ -23,19 +21,10 @@ interface FieldsMonitor {
 interface ListMonitor extends ExtractOptions {
   type: "list"
   name: string
-  /** All pages to fetch and combine. */
   urls: string[]
-  /** CSS selector matching one element per product. */
   itemSelector: string
-  /** Field selectors per item. Supports `selector@attr` syntax. */
   fields: Record<string, string>
-  /** Only notify for new items whose parsed price is ≤ this value. */
   maxPrice?: number
-  /**
-   * Section keywords checked (in order) against each item title.
-   * First match wins; unmatched items go to "Others".
-   * Example: ["X-Men", "Spider-Man", "Avengers"]
-   */
   sections?: string[]
 }
 
@@ -48,8 +37,6 @@ export interface MonitorResult {
   newItems?: ScrapedItem[]
   error?: string
 }
-
-// ── State file ─────────────────────────────────────────────────────────────
 
 type StateMap = Record<string, string>
 
@@ -77,9 +64,6 @@ function hashData(data: unknown): string {
   return createHash("sha256").update(JSON.stringify(data)).digest("hex")
 }
 
-// ── Helpers ────────────────────────────────────────────────────────────────
-
-/** Parse a price string like "$49.95" or "$1,234.56" → number */
 function parsePrice(str: string | null | undefined): number | null {
   if (!str) return null
   const m = /\$([\d,]+(?:\.\d{2})?)/.exec(str)
@@ -87,12 +71,10 @@ function parsePrice(str: string | null | undefined): number | null {
   return parseFloat(m[1].replace(/,/g, ""))
 }
 
-/** Escape HTML special chars in plain text used inside HTML messages. */
 function esc(str: string): string {
   return str.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
 }
 
-/** Render a single item as a bullet line with a clickable title. */
 function formatItemLine(item: ScrapedItem): string {
   const title = esc(item.fields["title"] ?? item.id)
   const link = item.url ? `<a href="${item.url}">${title}</a>` : `<b>${title}</b>`
@@ -104,11 +86,6 @@ function formatItemLine(item: ScrapedItem): string {
   return `• ${link}${extras.length ? "  —  " + extras.join("  /  ") : ""}`
 }
 
-/**
- * Detect which section an item belongs to by checking if any section keyword
- * appears in the title (case-insensitive, first match wins).
- * Falls back to "Others".
- */
 function detectSection(title: string, sections: string[]): string {
   const lower = title.toLowerCase()
   for (const section of sections) {
@@ -117,7 +94,6 @@ function detectSection(title: string, sections: string[]): string {
   return "Others"
 }
 
-/** Format a new-items notification, optionally grouped by sections. */
 function formatNewItems(
   monitorName: string,
   items: ScrapedItem[],
@@ -130,7 +106,6 @@ function formatNewItems(
     return [header, "", ...items.map(formatItemLine)].join("\n")
   }
 
-  // Group items by detected section; "Others" always goes last
   const groups = new Map<string, ScrapedItem[]>()
   for (const item of items) {
     const section = detectSection(item.fields["title"] ?? item.id, sections)
@@ -151,8 +126,6 @@ function formatNewItems(
   return lines.join("\n")
 }
 
-// ── List monitor ───────────────────────────────────────────────────────────
-
 const checkListMonitor = (
   monitor: ListMonitor,
   stateRef: Ref.Ref<StateMap>,
@@ -166,31 +139,25 @@ const checkListMonitor = (
       fieldTransforms: monitor.fieldTransforms,
     }
 
-    // Fetch all pages in parallel
     const pages = yield* Effect.all(urls.map(fetchPage), { concurrency: "unbounded" })
 
-    // Extract items from each page in parallel, then combine + deduplicate by ID
     const perPage = yield* Effect.all(
       pages.map((html) => extractItemList(html, itemSelector, fields, extractOpts)),
       { concurrency: "unbounded" },
     )
     const itemById = new Map(perPage.flat().map((item) => [item.id, item]))
 
-    // Guard: if no items were found at all, the site likely blocked us — skip silently
     if (itemById.size === 0) {
       yield* Effect.log(`[monitor] "${name}" returned 0 items — likely blocked/rate-limited, skipping`)
       return { name, status: "unchanged" as const }
     }
 
-    // Apply price filter to determine which items are candidates for notification
     const candidates = [...itemById.values()].filter((item) => {
       if (maxPrice === undefined) return true
       const price = parsePrice(item.fields["price"])
       return price !== null && price <= maxPrice
     })
 
-    // All IDs go into state (so above-budget items don't re-alert if price drops later).
-    // Only candidates are used for new-item detection.
     const allIds = [...itemById.keys()].sort()
     const candidateById = new Map(candidates.map((i) => [i.id, i]))
     const candidateIds = [...candidateById.keys()].sort()
@@ -212,12 +179,10 @@ const checkListMonitor = (
     const prevIds: string[] = JSON.parse(prevRaw)
     const prevSet = new Set(prevIds)
 
-    // New = candidate items whose ID has never appeared in state before
     const newItems = candidateIds
       .filter((id) => !prevSet.has(id))
       .map((id) => candidateById.get(id)!)
 
-    // Always update state with the full current set
     yield* Ref.update(stateRef, (s) => ({ ...s, [key]: JSON.stringify(allIds) }))
 
     if (newItems.length === 0) {
@@ -234,8 +199,6 @@ const checkListMonitor = (
       }),
     ),
   )
-
-// ── Fields monitor ─────────────────────────────────────────────────────────
 
 const checkFieldsMonitor = (
   monitor: FieldsMonitor,
@@ -284,8 +247,6 @@ const checkFieldsMonitor = (
     ),
   )
 
-// ── Dispatch ───────────────────────────────────────────────────────────────
-
 const checkMonitor = (
   monitor: MonitorConfig,
   stateRef: Ref.Ref<StateMap>,
@@ -293,8 +254,6 @@ const checkMonitor = (
   monitor.type === "list"
     ? checkListMonitor(monitor, stateRef)
     : checkFieldsMonitor(monitor, stateRef)
-
-// ── Main ───────────────────────────────────────────────────────────────────
 
 export const runMonitors = (): Effect.Effect<MonitorResult[], never> =>
   Effect.gen(function* () {
@@ -317,8 +276,6 @@ export const runMonitors = (): Effect.Effect<MonitorResult[], never> =>
       Effect.succeed([{ name: "system", status: "error" as const, error: String(error) }]),
     ),
   )
-
-// ── Entrypoint ─────────────────────────────────────────────────────────────
 
 Effect.runPromise(runMonitors()).then((results) => {
   console.log(JSON.stringify(results, null, 2))
