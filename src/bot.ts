@@ -3,13 +3,24 @@ import { join } from "path"
 
 const STATE_PATH = join(process.cwd(), "state.json")
 const BOT_UPDATE_KEY = "__bot_last_update_id__"
-const MONITOR_WORKFLOWS = ["monitor-instocktrades.yml", "monitor-ebay.yml"]
+const MONITOR_WORKFLOWS = [
+  { file: "monitor-instocktrades.yml", label: "InStockTrades" },
+  { file: "monitor-ebay.yml", label: "eBay" },
+] as const
 
 type StateMap = Record<string, string>
 
 type TelegramUpdate = {
   update_id: number
   message?: { chat: { id: number }; text?: string }
+}
+
+type WorkflowRun = {
+  html_url: string
+  event: string
+  status: string
+  conclusion: string | null
+  created_at: string
 }
 
 function loadState(): StateMap {
@@ -33,7 +44,16 @@ async function sendMessage(token: string, chatId: string, text: string) {
   })
 }
 
-async function dispatchWorkflow(workflowFile: string) {
+function githubHeaders(ghToken: string): Record<string, string> {
+  return {
+    Authorization: `Bearer ${ghToken}`,
+    Accept: "application/vnd.github+json",
+    "Content-Type": "application/json",
+    "User-Agent": "price-monitor-bot",
+  }
+}
+
+function githubContext() {
   const ghToken = process.env.GITHUB_TOKEN ?? ""
   const repo = process.env.GITHUB_REPOSITORY ?? ""
   const ref = process.env.GITHUB_REF_NAME ?? "main"
@@ -42,16 +62,17 @@ async function dispatchWorkflow(workflowFile: string) {
     throw new Error("GitHub dispatch credentials not available")
   }
 
+  return { ghToken, repo, ref }
+}
+
+async function dispatchWorkflow(workflowFile: string) {
+  const { ghToken, repo, ref } = githubContext()
+
   const res = await fetch(
     `https://api.github.com/repos/${repo}/actions/workflows/${workflowFile}/dispatches`,
     {
       method: "POST",
-      headers: {
-        Authorization: `Bearer ${ghToken}`,
-        Accept: "application/vnd.github+json",
-        "Content-Type": "application/json",
-        "User-Agent": "price-monitor-bot",
-      },
+      headers: githubHeaders(ghToken),
       body: JSON.stringify({ ref }),
     },
   )
@@ -60,6 +81,30 @@ async function dispatchWorkflow(workflowFile: string) {
     const body = await res.text()
     throw new Error(`Dispatch failed for ${workflowFile}: ${res.status} ${body}`)
   }
+}
+
+async function getLatestWorkflowRun(workflowFile: string): Promise<WorkflowRun | null> {
+  const { ghToken, repo } = githubContext()
+
+  const res = await fetch(
+    `https://api.github.com/repos/${repo}/actions/workflows/${workflowFile}/runs?per_page=1`,
+    { headers: githubHeaders(ghToken) },
+  )
+
+  if (!res.ok) {
+    const body = await res.text()
+    throw new Error(`Status lookup failed for ${workflowFile}: ${res.status} ${body}`)
+  }
+
+  const data = (await res.json()) as { workflow_runs?: WorkflowRun[] }
+  return data.workflow_runs?.[0] ?? null
+}
+
+function formatRunStatus(run: WorkflowRun | null): string {
+  if (!run) return "no runs yet"
+  const state = run.conclusion ?? run.status
+  const time = new Date(run.created_at).toUTCString()
+  return `${state} (${run.event}, ${time})`
 }
 
 async function main() {
@@ -95,13 +140,30 @@ async function main() {
     } else if (text === "/trigger") {
       await sendMessage(token, chatId, "⚡ Triggering monitor workflows...")
       try {
-        for (const workflowFile of MONITOR_WORKFLOWS) {
-          await dispatchWorkflow(workflowFile)
+        for (const workflow of MONITOR_WORKFLOWS) {
+          await dispatchWorkflow(workflow.file)
         }
         await sendMessage(token, chatId, "✅ Monitor workflows dispatched.")
       } catch (error) {
         console.error(error)
         await sendMessage(token, chatId, "❌ Failed to trigger monitor workflows.")
+      }
+    } else if (text === "/status") {
+      try {
+        const statuses = await Promise.all(
+          MONITOR_WORKFLOWS.map(async (workflow) => ({
+            label: workflow.label,
+            run: await getLatestWorkflowRun(workflow.file),
+          })),
+        )
+
+        const lines = statuses.map(
+          ({ label, run }) => `• <b>${label}</b>: ${formatRunStatus(run)}`,
+        )
+        await sendMessage(token, chatId, ["📊 Monitor status", ...lines].join("\n"))
+      } catch (error) {
+        console.error(error)
+        await sendMessage(token, chatId, "❌ Failed to fetch workflow status.")
       }
     }
   }
