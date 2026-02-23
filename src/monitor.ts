@@ -264,7 +264,7 @@ export const runMonitors = (): Effect.Effect<MonitorResult[], never> =>
 
     const results = yield* Effect.all(
       monitors.map((m) => checkMonitor(m, stateRef)),
-      { concurrency: "unbounded" },
+      { concurrency: 1 },
     )
 
     const finalState = yield* Ref.get(stateRef)
