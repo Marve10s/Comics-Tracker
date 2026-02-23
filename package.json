@@ -1,5 +1,5 @@
 {
-  "name": "price-monitor",
+  "name": "telegram-bot-monitoring",
   "version": "1.0.0",
   "type": "module",
   "scripts": {

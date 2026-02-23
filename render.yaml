@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: price-monitor-bot
+    name: telegram-bot-monitoring
     env: node
     plan: free
     autoDeploy: true
@@ -11,7 +11,7 @@ services:
       - key: NODE_VERSION
         value: 22
       - key: GITHUB_REPOSITORY
-        value: Marve10s/Comics-Tracker
+        value: your-github-user-or-org/your-repo
       - key: GITHUB_REF_NAME
         value: main
       - key: TELEGRAM_WEBHOOK_PATH
