@@ -168,11 +168,7 @@ const checkListMonitor = (
 
     if (prevRaw === null) {
       yield* Ref.update(stateRef, (s) => ({ ...s, [key]: JSON.stringify(allIds) }))
-      yield* sendMessage(
-        `👀 <b>Now monitoring:</b> ${esc(name)}\nTracking <b>${allIds.length}</b> items across ${urls.length} page(s)` +
-          (maxPrice !== undefined ? ` (price filter: under $${maxPrice})` : "") +
-          ".",
-      )
+      yield* Effect.log(`[monitor] initialized "${name}" with ${allIds.length} items`)
       return { name, status: "initialized" as const, count: allIds.length }
     }
 
@@ -217,12 +213,7 @@ const checkFieldsMonitor = (
 
     if (prevHash === null) {
       yield* Ref.update(stateRef, (s) => ({ ...s, [key]: currentHash }))
-      const fieldLines = Object.entries(current)
-        .map(([k, v]) => `  • ${esc(k)}: ${esc(v ?? "(not found)")}`)
-        .join("\n")
-      yield* sendMessage(
-        `👀 <b>Now monitoring:</b> ${esc(name)}\n${fieldLines}\n\n<a href="${url}">View page</a>`,
-      )
+      yield* Effect.log(`[monitor] initialized "${name}"`)
       return { name, status: "initialized" as const }
     }
 
