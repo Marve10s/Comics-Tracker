@@ -126,6 +126,13 @@ function formatNewItems(
   return lines.join("\n")
 }
 
+function formatErrorAlert(monitorName: string, error: unknown): string {
+  const raw = String(error)
+  const compact = raw.replace(/\s+/g, " ").trim()
+  const summary = compact.length > 1200 ? `${compact.slice(0, 1200)}...` : compact
+  return `❌ <b>Monitor failed</b> — ${esc(monitorName)}\n<code>${esc(summary)}</code>`
+}
+
 const checkListMonitor = (
   monitor: ListMonitor,
   stateRef: Ref.Ref<StateMap>,
@@ -191,6 +198,9 @@ const checkListMonitor = (
     Effect.catchAll((error) =>
       Effect.gen(function* () {
         yield* Effect.log(`[monitor] error on "${monitor.name}": ${error}`)
+        yield* sendMessage(formatErrorAlert(monitor.name, error)).pipe(
+          Effect.catchAll(() => Effect.void),
+        )
         return { name: monitor.name, status: "error" as const, error: String(error) }
       }),
     ),
@@ -233,6 +243,9 @@ const checkFieldsMonitor = (
     Effect.catchAll((error) =>
       Effect.gen(function* () {
         yield* Effect.log(`[monitor] error on "${monitor.name}": ${error}`)
+        yield* sendMessage(formatErrorAlert(monitor.name, error)).pipe(
+          Effect.catchAll(() => Effect.void),
+        )
         return { name: monitor.name, status: "error" as const, error: String(error) }
       }),
     ),
