@@ -142,6 +142,7 @@ const checkListMonitor = (
     const extractOpts: ExtractOptions = {
       baseUrl: monitor.baseUrl,
       idAttribute: monitor.idAttribute,
+      idPattern: monitor.idPattern,
       urlTemplate: monitor.urlTemplate,
       fieldTransforms: monitor.fieldTransforms,
     }

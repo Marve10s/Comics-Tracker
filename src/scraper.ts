@@ -49,6 +49,7 @@ export interface ScrapedItem {
 export interface ExtractOptions {
   baseUrl?: string
   idAttribute?: string
+  idPattern?: string
   urlTemplate?: string
   fieldTransforms?: Record<string, string>
 }
@@ -61,7 +62,7 @@ export const extractItemList = (
 ): Effect.Effect<ScrapedItem[], ParseError> =>
   Effect.try({
     try: () => {
-      const { baseUrl, idAttribute, urlTemplate, fieldTransforms } = options
+      const { baseUrl, idAttribute, idPattern, urlTemplate, fieldTransforms } = options
       const $ = cheerio.load(html)
       const items: ScrapedItem[] = []
 
@@ -103,7 +104,8 @@ export const extractItemList = (
           id = $(el).attr(idAttribute) ?? null
         } else {
           const urlVal = fields["url"] ?? null
-          const m = urlVal ? /\/products\/([^/?]+)/.exec(urlVal) : null
+          const re = idPattern ? new RegExp(idPattern) : /\/products\/([^/?]+)/
+          const m = urlVal ? re.exec(urlVal) : null
           id = m?.[1] ?? null
         }
 

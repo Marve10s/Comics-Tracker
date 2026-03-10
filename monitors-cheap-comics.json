@@ -1,0 +1,40 @@
+[
+  {
+    "type": "list",
+    "name": "Marvel Omnibus — Cheap-Comics.com",
+    "urls": [
+      "https://www.cheap-comics.com/product-category/tpb-hc/marvel-omnibus/?orderby=date",
+      "https://www.cheap-comics.com/product-category/tpb-hc/marvel-omnibus/page/2/?orderby=date"
+    ],
+    "itemSelector": "li.product",
+    "baseUrl": "https://www.cheap-comics.com",
+    "idPattern": "\\/shop\\/([^/?]+)",
+    "fields": {
+      "title": "a.woocommerce-loop-product__title",
+      "url": "a.woocommerce-loop-product__title@href",
+      "price": ".price"
+    },
+    "sections": [
+      "Wolverine",
+      "X-Men",
+      "X-Factor",
+      "X-Force",
+      "Spider-Man",
+      "Spider-Woman",
+      "Avengers",
+      "Iron Man",
+      "Captain America",
+      "Thor",
+      "Hulk",
+      "Daredevil",
+      "Fantastic Four",
+      "Black Panther",
+      "Doctor Strange",
+      "Deadpool",
+      "Guardians",
+      "Punisher",
+      "Moon Knight",
+      "Venom"
+    ]
+  }
+]
