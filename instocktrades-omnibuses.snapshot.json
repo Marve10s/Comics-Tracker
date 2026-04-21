@@ -1,7 +1,7 @@
 {
   "monitorName": "Marvel Omnibus Catalog — InStockTrades",
-  "capturedAt": "2026-04-21T19:01:56.181Z",
-  "itemCount": 207,
+  "capturedAt": "2026-04-21T19:35:42.880Z",
+  "itemCount": 209,
   "items": [
     {
       "id": "nov247684a",
@@ -327,6 +327,14 @@
       "id": "dec230750",
       "title": "Daredevil By Chip Zdarsky Omnibus HC Vol 01",
       "url": "https://www.instocktrades.com/products/dec230750/daredevil-by-chip-zdarsky-omnibus-hc-vol-01",
+      "price": "$65.00",
+      "priceValue": 65,
+      "discount": "35% off!"
+    },
+    {
+      "id": "jun240908",
+      "title": "Daredevil By Chip Zdarsky Omnibus HC Vol 02",
+      "url": "https://www.instocktrades.com/products/jun240908/daredevil-by-chip-zdarsky-omnibus-hc-vol-02",
       "price": "$65.00",
       "priceValue": 65,
       "discount": "35% off!"
@@ -1423,6 +1431,14 @@
       "id": "aug230952",
       "title": "Ultimate X-Men Omnibus HC Vol 02",
       "url": "https://www.instocktrades.com/products/aug230952/ultimate-x-men-omnibus-hc-vol-02",
+      "price": "$81.25",
+      "priceValue": 81.25,
+      "discount": "35% off!"
+    },
+    {
+      "id": "jul254705",
+      "title": "Ultimate X-Men Omnibus HC Vol 03 Michael Turner CVR",
+      "url": "https://www.instocktrades.com/products/jul254705/ultimate-x-men-omnibus-hc-vol-03-michael-turner-cvr",
       "price": "$81.25",
       "priceValue": 81.25,
       "discount": "35% off!"
