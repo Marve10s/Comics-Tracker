@@ -1,7 +1,7 @@
 {
   "monitorName": "Marvel Omnibus Catalog — InStockTrades",
-  "capturedAt": "2026-04-21T18:35:40.623Z",
-  "itemCount": 206,
+  "capturedAt": "2026-04-21T19:01:56.181Z",
+  "itemCount": 207,
   "items": [
     {
       "id": "nov247684a",
@@ -50,6 +50,14 @@
       "price": "$97.50",
       "priceValue": 97.5,
       "discount": "35% off!"
+    },
+    {
+      "id": "oct230896d",
+      "title": "Amazing Spider-Man By Spencer Omnibus HC Vol 02 Adams DM Var",
+      "url": "https://www.instocktrades.com/products/oct230896d/amazing-spider-man-by-spencer-omnibus-hc-vol-02-adams-dm-var",
+      "price": "$75.00",
+      "priceValue": 75,
+      "discount": "50% off!"
     },
     {
       "id": "aug254848",
