@@ -1,12 +1,9 @@
 import { existsSync, readFileSync, writeFileSync } from "fs"
 import { join } from "path"
+import { getEnabledMonitorWorkflows } from "./monitor-workflows.js"
 
 const STATE_PATH = join(process.cwd(), "state.json")
 const BOT_UPDATE_KEY = "__bot_last_update_id__"
-const MONITOR_WORKFLOWS = [
-  { file: "monitor-instocktrades.yml", label: "InStockTrades" },
-  { file: "monitor-ebay.yml", label: "eBay" },
-] as const
 
 type StateMap = Record<string, string>
 
@@ -110,6 +107,7 @@ function formatRunStatus(run: WorkflowRun | null): string {
 async function main() {
   const token = process.env.TELEGRAM_TOKEN ?? ""
   const chatId = process.env.TELEGRAM_CHAT_ID ?? ""
+  const monitorWorkflows = getEnabledMonitorWorkflows()
 
   if (!token || !chatId) {
     console.log("[bot] credentials not set")
@@ -140,7 +138,7 @@ async function main() {
     } else if (text === "/trigger") {
       await sendMessage(token, chatId, "⚡ Triggering monitor workflows...")
       try {
-        for (const workflow of MONITOR_WORKFLOWS) {
+        for (const workflow of monitorWorkflows) {
           await dispatchWorkflow(workflow.file)
         }
         await sendMessage(token, chatId, "✅ Monitor workflows dispatched.")
@@ -151,7 +149,7 @@ async function main() {
     } else if (text === "/status") {
       try {
         const statuses = await Promise.all(
-          MONITOR_WORKFLOWS.map(async (workflow) => ({
+          monitorWorkflows.map(async (workflow) => ({
             label: workflow.label,
             run: await getLatestWorkflowRun(workflow.file),
           })),

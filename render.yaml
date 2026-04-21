@@ -22,6 +22,8 @@ services:
         sync: false
       - key: GITHUB_TOKEN
         sync: false
+      - key: ENABLE_EBAY
+        value: false
       - key: TELEGRAM_WEBHOOK_SECRET
         sync: false
       - key: BOT_PUBLIC_URL

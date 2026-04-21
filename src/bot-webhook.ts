@@ -1,9 +1,5 @@
 import { createServer } from "http"
-
-const MONITOR_WORKFLOWS = [
-  { file: "monitor-instocktrades.yml", label: "InStockTrades" },
-  { file: "monitor-ebay.yml", label: "eBay" },
-] as const
+import { getEnabledMonitorWorkflows } from "./monitor-workflows.js"
 
 type TelegramUpdate = {
   update_id: number
@@ -94,6 +90,7 @@ function formatRunStatus(run: WorkflowRun | null): string {
 
 async function handleMessage(update: TelegramUpdate) {
   const expectedChatId = process.env.TELEGRAM_CHAT_ID ?? ""
+  const monitorWorkflows = getEnabledMonitorWorkflows()
   const msg = update.message
   if (!msg || !expectedChatId) return
   if (String(msg.chat.id) !== expectedChatId) return
@@ -108,7 +105,7 @@ async function handleMessage(update: TelegramUpdate) {
   if (text === "/trigger") {
     await sendTelegramMessage("⚡ Triggering monitor workflows...")
     try {
-      for (const workflow of MONITOR_WORKFLOWS) {
+      for (const workflow of monitorWorkflows) {
         await dispatchWorkflow(workflow.file)
       }
       await sendTelegramMessage("✅ Monitor workflows dispatched.")
@@ -122,7 +119,7 @@ async function handleMessage(update: TelegramUpdate) {
   if (text === "/status") {
     try {
       const statuses = await Promise.all(
-        MONITOR_WORKFLOWS.map(async (workflow) => ({
+        monitorWorkflows.map(async (workflow) => ({
           label: workflow.label,
           run: await getLatestWorkflowRun(workflow.file),
         })),
@@ -190,4 +187,3 @@ createServer(async (req, res) => {
 }).listen(port, () => {
   console.log(`[bot-webhook] listening on :${port} path=${webhookPath}`)
 })
-

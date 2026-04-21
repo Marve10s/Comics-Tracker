@@ -11,7 +11,7 @@ It can:
 
 ## What you need to customize
 
-- `monitors-ebay.json` / `monitors-instocktrades.json`: replace with your own monitor targets, selectors, filters, and URLs
+- `monitors-instocktrades.json`: replace with your own monitor targets, selectors, filters, and URLs
 - `.github/workflows/*.yml`: update schedules, timezone window, and which monitor JSON files are executed
 - `render.yaml`: set your `GITHUB_REPOSITORY` and private env vars in Render
 
@@ -49,6 +49,8 @@ It can:
 
 ## Notes
 
-- `state.json` stores dedupe state (seen items and bot update offsets)
+- `instocktrades-omnibuses.snapshot.json` stores the current InStockTrades omnibus catalog snapshot
+- `state.json` stores bot update offsets and any legacy non-snapshot monitor state
+- `ENABLE_EBAY=false` disables eBay without removing the workflow or config files
 - If Telegram credentials are missing, monitor runs log messages instead of sending alerts
 - Webhook mode requires a public HTTPS URL (Render works well for this)

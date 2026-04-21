@@ -48,5 +48,5 @@ jobs:
         run: |
           git config user.name "price-monitor[bot]"
           git config user.email "price-monitor[bot]@users.noreply.github.com"
-          git add state.json
+          git add state.json instocktrades-omnibuses.snapshot.json
           git diff --staged --quiet || (git commit -m "chore: update state [instocktrades] [skip ci]" && git pull --rebase && git push)
