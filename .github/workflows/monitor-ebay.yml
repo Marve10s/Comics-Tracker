@@ -12,7 +12,24 @@ jobs:
   monitor:
     runs-on: ubuntu-latest
     steps:
+      - name: Check eBay feature flag
+        id: ebay_enabled
+        run: |
+          case "${ENABLE_EBAY,,}" in
+            1|true|yes|on)
+              echo "run=true" >> "$GITHUB_OUTPUT"
+              echo "ENABLE_EBAY=$ENABLE_EBAY (enabled)"
+              ;;
+            *)
+              echo "run=false" >> "$GITHUB_OUTPUT"
+              echo "ENABLE_EBAY=${ENABLE_EBAY:-<unset>} (disabled)"
+              ;;
+          esac
+        env:
+          ENABLE_EBAY: ${{ vars.ENABLE_EBAY }}
+
       - name: Check active window (Europe/Kyiv)
+        if: steps.ebay_enabled.outputs.run == 'true'
         id: active_window
         run: |
           HOUR="$(TZ=Europe/Kyiv date +%H)"
@@ -24,27 +41,27 @@ jobs:
             echo "Kyiv hour=$HOUR (quiet hours, skipping)"
           fi
 
-      - if: steps.active_window.outputs.run == 'true'
+      - if: steps.ebay_enabled.outputs.run == 'true' && steps.active_window.outputs.run == 'true'
         uses: actions/checkout@v4
 
-      - if: steps.active_window.outputs.run == 'true'
+      - if: steps.ebay_enabled.outputs.run == 'true' && steps.active_window.outputs.run == 'true'
         uses: actions/setup-node@v4
         with:
           node-version: "22"
           cache: "npm"
 
-      - if: steps.active_window.outputs.run == 'true'
+      - if: steps.ebay_enabled.outputs.run == 'true' && steps.active_window.outputs.run == 'true'
         run: npm ci
 
       - name: Run eBay monitors
-        if: steps.active_window.outputs.run == 'true'
+        if: steps.ebay_enabled.outputs.run == 'true' && steps.active_window.outputs.run == 'true'
         run: npx tsx src/monitor.ts monitors-ebay.json
         env:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
 
       - name: Commit state changes
-        if: steps.active_window.outputs.run == 'true'
+        if: steps.ebay_enabled.outputs.run == 'true' && steps.active_window.outputs.run == 'true'
         run: |
           git config user.name "price-monitor[bot]"
           git config user.email "price-monitor[bot]@users.noreply.github.com"

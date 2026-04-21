@@ -35,7 +35,6 @@ set -a; source .env; set +a
 
 Before running anything, replace the example monitors with your own:
 
-- `monitors-ebay.json`
 - `monitors-instocktrades.json`
 
 You can keep the file names, or create new ones and update the workflow files.
@@ -101,7 +100,6 @@ Available commands:
 
 This repo includes workflows in `/Users/ibrahime/Documents/Projects/price-monitor/.github/workflows`:
 
-- `monitor-ebay.yml`
 - `monitor-instocktrades.yml`
 - `bot.yml` (polling command listener every 5 min)
 
@@ -118,6 +116,9 @@ The polling bot workflow (`bot.yml`) uses `${{ github.token }}` automatically fo
 - Active-time timezone window (`Europe/Kyiv` check)
 - Monitor JSON file names in the run commands
 - Workflow names if you want more generic labels
+- Repository variable `ENABLE_EBAY`
+  - Leave unset or set to `false` to keep eBay disabled
+  - Set it to `true` only if you want the eBay workflow and bot commands to include eBay again
 
 ## 7. Render deployment (webhook bot mode)
 
@@ -200,4 +201,4 @@ Then send `/test` to your Telegram bot.
 - Webhook returns unauthorized
   - `TELEGRAM_WEBHOOK_SECRET` in Telegram webhook registration does not match the server env var
 - No alerts on first run
-  - Expected: first run initializes `state.json` and usually does not notify (dedupe baseline)
+  - Expected: first run initializes `instocktrades-omnibuses.snapshot.json` and usually does not notify (baseline snapshot)

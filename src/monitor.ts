@@ -26,19 +26,56 @@ interface ListMonitor extends ExtractOptions {
   fields: Record<string, string>
   maxPrice?: number
   sections?: string[]
+  pageParam?: string
+  maxPages?: number
+  snapshotFile?: string
 }
 
 type MonitorConfig = FieldsMonitor | ListMonitor
 
 export interface MonitorResult {
   name: string
-  status: "initialized" | "new_items" | "unchanged" | "error"
+  status: "initialized" | "new_items" | "changed" | "unchanged" | "error"
   count?: number
   newItems?: ScrapedItem[]
+  changes?: {
+    added: number
+    removed: number
+    priceIncreased: number
+    priceDecreased: number
+  }
   error?: string
 }
 
 type StateMap = Record<string, string>
+
+interface CatalogSnapshotItem {
+  id: string
+  title: string
+  url: string
+  price: string | null
+  priceValue: number | null
+  discount: string | null
+}
+
+interface CatalogSnapshot {
+  monitorName: string
+  capturedAt: string
+  itemCount: number
+  items: CatalogSnapshotItem[]
+}
+
+interface CatalogPriceChange {
+  previous: CatalogSnapshotItem
+  current: CatalogSnapshotItem
+}
+
+interface CatalogDiff {
+  added: CatalogSnapshotItem[]
+  removed: CatalogSnapshotItem[]
+  priceIncreased: CatalogPriceChange[]
+  priceDecreased: CatalogPriceChange[]
+}
 
 const STATE_PATH = join(process.cwd(), "state.json")
 const MONITORS_PATH = join(process.cwd(), process.argv[2] ?? "monitors.json")
@@ -54,6 +91,25 @@ function loadStateFile(): StateMap {
 
 function saveStateFile(state: StateMap): void {
   writeFileSync(STATE_PATH, JSON.stringify(state, null, 2) + "\n")
+}
+
+function resolveMonitorFile(file: string): string {
+  return join(process.cwd(), file)
+}
+
+function loadCatalogSnapshot(file: string): CatalogSnapshot | null {
+  const snapshotPath = resolveMonitorFile(file)
+  if (!existsSync(snapshotPath)) return null
+  try {
+    return JSON.parse(readFileSync(snapshotPath, "utf-8")) as CatalogSnapshot
+  } catch {
+    return null
+  }
+}
+
+function saveCatalogSnapshot(file: string, snapshot: CatalogSnapshot): void {
+  const snapshotPath = resolveMonitorFile(file)
+  writeFileSync(snapshotPath, JSON.stringify(snapshot, null, 2) + "\n")
 }
 
 function monitorKey(name: string): string {
@@ -126,6 +182,70 @@ function formatNewItems(
   return lines.join("\n")
 }
 
+function formatCatalogItemLink(item: CatalogSnapshotItem): string {
+  const title = esc(item.title || item.id)
+  return item.url ? `<a href="${item.url}">${title}</a>` : `<b>${title}</b>`
+}
+
+function formatCatalogPrice(item: CatalogSnapshotItem): string {
+  if (item.price) return item.price.trim()
+  if (item.priceValue !== null) return `$${item.priceValue.toFixed(2)}`
+  return "price n/a"
+}
+
+function formatCatalogItemLine(item: CatalogSnapshotItem): string {
+  const extras: string[] = []
+  if (item.discount) extras.push(item.discount.trim())
+  extras.push(formatCatalogPrice(item))
+  return `• ${formatCatalogItemLink(item)}${extras.length ? "  —  " + extras.join("  /  ") : ""}`
+}
+
+function formatCatalogPriceChangeLine(change: CatalogPriceChange): string {
+  return `• ${formatCatalogItemLink(change.current)}  —  ${formatCatalogPrice(change.previous)} -> ${formatCatalogPrice(change.current)}`
+}
+
+function hasCatalogChanges(diff: CatalogDiff): boolean {
+  return (
+    diff.added.length > 0 ||
+    diff.removed.length > 0 ||
+    diff.priceIncreased.length > 0 ||
+    diff.priceDecreased.length > 0
+  )
+}
+
+function formatCatalogChanges(monitorName: string, diff: CatalogDiff): string {
+  const summary = [
+    `new ${diff.added.length}`,
+    `removed ${diff.removed.length}`,
+    `price down ${diff.priceDecreased.length}`,
+    `price up ${diff.priceIncreased.length}`,
+  ].join("  /  ")
+
+  const lines = [`📚 <b>${esc(monitorName)}</b> changed`, summary]
+
+  if (diff.added.length > 0) {
+    lines.push("", `<b>New (${diff.added.length})</b>`)
+    lines.push(...diff.added.map(formatCatalogItemLine))
+  }
+
+  if (diff.removed.length > 0) {
+    lines.push("", `<b>Removed (${diff.removed.length})</b>`)
+    lines.push(...diff.removed.map(formatCatalogItemLine))
+  }
+
+  if (diff.priceDecreased.length > 0) {
+    lines.push("", `<b>Price Down (${diff.priceDecreased.length})</b>`)
+    lines.push(...diff.priceDecreased.map(formatCatalogPriceChangeLine))
+  }
+
+  if (diff.priceIncreased.length > 0) {
+    lines.push("", `<b>Price Up (${diff.priceIncreased.length})</b>`)
+    lines.push(...diff.priceIncreased.map(formatCatalogPriceChangeLine))
+  }
+
+  return lines.join("\n")
+}
+
 function formatErrorAlert(monitorName: string, error: unknown): string {
   const raw = String(error)
   const compact = raw.replace(/\s+/g, " ").trim()
@@ -133,12 +253,59 @@ function formatErrorAlert(monitorName: string, error: unknown): string {
   return `❌ <b>Monitor failed</b> — ${esc(monitorName)}\n<code>${esc(summary)}</code>`
 }
 
-const checkListMonitor = (
-  monitor: ListMonitor,
-  stateRef: Ref.Ref<StateMap>,
-): Effect.Effect<MonitorResult, never> =>
+function toCatalogSnapshotItem(item: ScrapedItem): CatalogSnapshotItem {
+  return {
+    id: item.id,
+    title: item.fields["title"]?.trim() || item.id,
+    url: item.url,
+    price: item.fields["price"]?.trim() ?? null,
+    priceValue: parsePrice(item.fields["price"]),
+    discount: item.fields["discount"]?.trim() ?? null,
+  }
+}
+
+function buildCatalogSnapshot(name: string, items: ScrapedItem[]): CatalogSnapshot {
+  const snapshotItems = items
+    .map(toCatalogSnapshotItem)
+    .sort((a, b) => a.title.localeCompare(b.title) || a.id.localeCompare(b.id))
+
+  return {
+    monitorName: name,
+    capturedAt: new Date().toISOString(),
+    itemCount: snapshotItems.length,
+    items: snapshotItems,
+  }
+}
+
+function diffCatalogSnapshots(previous: CatalogSnapshot, current: CatalogSnapshot): CatalogDiff {
+  const previousById = new Map(previous.items.map((item) => [item.id, item]))
+  const currentById = new Map(current.items.map((item) => [item.id, item]))
+
+  const added = current.items.filter((item) => !previousById.has(item.id))
+  const removed = previous.items.filter((item) => !currentById.has(item.id))
+  const priceIncreased: CatalogPriceChange[] = []
+  const priceDecreased: CatalogPriceChange[] = []
+
+  for (const currentItem of current.items) {
+    const previousItem = previousById.get(currentItem.id)
+    if (!previousItem) continue
+    if (previousItem.priceValue === null || currentItem.priceValue === null) continue
+    if (previousItem.priceValue === currentItem.priceValue) continue
+
+    const change = { previous: previousItem, current: currentItem }
+    if (currentItem.priceValue > previousItem.priceValue) {
+      priceIncreased.push(change)
+    } else {
+      priceDecreased.push(change)
+    }
+  }
+
+  return { added, removed, priceIncreased, priceDecreased }
+}
+
+const fetchMonitorItems = (monitor: ListMonitor) =>
   Effect.gen(function* () {
-    const { name, urls, itemSelector, fields, maxPrice } = monitor
+    const { urls, itemSelector, fields, pageParam } = monitor
     const extractOpts: ExtractOptions = {
       baseUrl: monitor.baseUrl,
       idAttribute: monitor.idAttribute,
@@ -147,13 +314,103 @@ const checkListMonitor = (
       fieldTransforms: monitor.fieldTransforms,
     }
 
-    const pages = yield* Effect.all(urls.map(fetchPage), { concurrency: "unbounded" })
+    const fetchItemsForUrl = (url: string) =>
+      Effect.gen(function* () {
+        const html = yield* fetchPage(url)
+        return yield* extractItemList(html, itemSelector, fields, extractOpts)
+      })
 
-    const perPage = yield* Effect.all(
-      pages.map((html) => extractItemList(html, itemSelector, fields, extractOpts)),
-      { concurrency: "unbounded" },
-    )
-    const itemById = new Map(perPage.flat().map((item) => [item.id, item]))
+    if (!pageParam) {
+      const perPage = yield* Effect.all(urls.map(fetchItemsForUrl), { concurrency: "unbounded" })
+      return perPage.flat()
+    }
+
+    const maxPages = Math.max(monitor.maxPages ?? 20, 1)
+    const pages: ScrapedItem[][] = []
+
+    for (const rawUrl of urls) {
+      const seedUrl = new URL(rawUrl)
+      const parsedStartPage = Number(seedUrl.searchParams.get(pageParam) ?? "1")
+      const startPage = Number.isFinite(parsedStartPage) && parsedStartPage > 0 ? parsedStartPage : 1
+
+      for (let pageOffset = 0; pageOffset < maxPages; pageOffset += 1) {
+        const pageNumber = startPage + pageOffset
+        const pageUrl = new URL(seedUrl)
+        pageUrl.searchParams.set(pageParam, String(pageNumber))
+
+        const pageItems = yield* fetchItemsForUrl(pageUrl.toString())
+        if (pageItems.length === 0) break
+        pages.push(pageItems)
+      }
+    }
+
+    return pages.flat()
+  })
+
+const checkCatalogSnapshotMonitor = (monitor: ListMonitor): Effect.Effect<MonitorResult, never> =>
+  Effect.gen(function* () {
+    const { name, snapshotFile } = monitor
+
+    if (!snapshotFile) {
+      throw new Error(`snapshotFile is required for "${name}"`)
+    }
+
+    const allItems = yield* fetchMonitorItems(monitor)
+    const itemById = new Map(allItems.map((item) => [item.id, item]))
+
+    if (itemById.size === 0) {
+      yield* Effect.log(`[monitor] "${name}" returned 0 items — likely blocked/rate-limited, skipping`)
+      return { name, status: "unchanged" as const }
+    }
+
+    const snapshot = buildCatalogSnapshot(name, [...itemById.values()])
+    const previousSnapshot = loadCatalogSnapshot(snapshotFile)
+
+    if (previousSnapshot === null) {
+      saveCatalogSnapshot(snapshotFile, snapshot)
+      yield* Effect.log(`[monitor] initialized "${name}" snapshot with ${snapshot.itemCount} items`)
+      return { name, status: "initialized" as const, count: snapshot.itemCount }
+    }
+
+    const diff = diffCatalogSnapshots(previousSnapshot, snapshot)
+    if (!hasCatalogChanges(diff)) {
+      saveCatalogSnapshot(snapshotFile, snapshot)
+      return { name, status: "unchanged" as const, count: snapshot.itemCount }
+    }
+
+    yield* sendMessage(formatCatalogChanges(name, diff))
+    saveCatalogSnapshot(snapshotFile, snapshot)
+    return {
+      name,
+      status: "changed" as const,
+      count: snapshot.itemCount,
+      changes: {
+        added: diff.added.length,
+        removed: diff.removed.length,
+        priceIncreased: diff.priceIncreased.length,
+        priceDecreased: diff.priceDecreased.length,
+      },
+    }
+  }).pipe(
+    Effect.catchAll((error) =>
+      Effect.gen(function* () {
+        yield* Effect.log(`[monitor] error on "${monitor.name}": ${error}`)
+        yield* sendMessage(formatErrorAlert(monitor.name, error)).pipe(
+          Effect.catchAll(() => Effect.void),
+        )
+        return { name: monitor.name, status: "error" as const, error: String(error) }
+      }),
+    ),
+  )
+
+const checkSeenItemsListMonitor = (
+  monitor: ListMonitor,
+  stateRef: Ref.Ref<StateMap>,
+): Effect.Effect<MonitorResult, never> =>
+  Effect.gen(function* () {
+    const { name, maxPrice } = monitor
+    const allItems = yield* fetchMonitorItems(monitor)
+    const itemById = new Map(allItems.map((item) => [item.id, item]))
 
     if (itemById.size === 0) {
       yield* Effect.log(`[monitor] "${name}" returned 0 items — likely blocked/rate-limited, skipping`)
@@ -206,6 +463,14 @@ const checkListMonitor = (
       }),
     ),
   )
+
+const checkListMonitor = (
+  monitor: ListMonitor,
+  stateRef: Ref.Ref<StateMap>,
+): Effect.Effect<MonitorResult, never> =>
+  monitor.snapshotFile
+    ? checkCatalogSnapshotMonitor(monitor)
+    : checkSeenItemsListMonitor(monitor, stateRef)
 
 const checkFieldsMonitor = (
   monitor: FieldsMonitor,
