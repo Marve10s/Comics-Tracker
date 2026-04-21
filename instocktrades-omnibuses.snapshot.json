@@ -1,6 +1,6 @@
 {
   "monitorName": "Marvel Omnibus Catalog — InStockTrades",
-  "capturedAt": "2026-04-21T19:35:42.880Z",
+  "capturedAt": "2026-04-21T20:00:52.305Z",
   "itemCount": 209,
   "items": [
     {
@@ -1039,6 +1039,14 @@
       "id": "jul254702",
       "title": "Sentry Omnibus HC David Finch CVR",
       "url": "https://www.instocktrades.com/products/jul254702/sentry-omnibus-hc-david-finch-cvr",
+      "price": "$81.25",
+      "priceValue": 81.25,
+      "discount": "35% off!"
+    },
+    {
+      "id": "jul254702d",
+      "title": "Sentry Omnibus HC David Finch CVR",
+      "url": "https://www.instocktrades.com/products/jul254702d/sentry-omnibus-hc-david-finch-cvr",
       "price": "$62.50",
       "priceValue": 62.5,
       "discount": "50% off!"
@@ -1311,9 +1319,9 @@
       "id": "jul254699",
       "title": "Superior Spider-Man Returns Omnibus HC Mark Bagley CVR",
       "url": "https://www.instocktrades.com/products/jul254699/superior-spider-man-returns-omnibus-hc-mark-bagley-cvr",
-      "price": "$62.50",
-      "priceValue": 62.5,
-      "discount": "50% off!"
+      "price": "$81.25",
+      "priceValue": 81.25,
+      "discount": "35% off!"
     },
     {
       "id": "feb250921",
@@ -1391,14 +1399,6 @@
       "id": "oct254646",
       "title": "Ultimate Fantastic Four Omnibus HC Vol 02 Pasqual Ferry Silver Surfer Cover",
       "url": "https://www.instocktrades.com/products/oct254646/ultimate-fantastic-four-omnibus-hc-vol-02-pasqual-ferry-silver-surfer-cover",
-      "price": "$65.00",
-      "priceValue": 65,
-      "discount": "35% off!"
-    },
-    {
-      "id": "oct254647",
-      "title": "Ultimate Fantastic Four Omnibus HC Vol 02 Pasual Ferry Thanos Cover [Dm Only]",
-      "url": "https://www.instocktrades.com/products/oct254647/ultimate-fantastic-four-omnibus-hc-vol-02-pasual-ferry-thanos-cover-[dm-only]",
       "price": "$65.00",
       "priceValue": 65,
       "discount": "35% off!"
