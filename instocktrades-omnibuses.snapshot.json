@@ -1,6 +1,6 @@
 {
   "monitorName": "Marvel Omnibus Catalog — InStockTrades",
-  "capturedAt": "2026-04-21T20:00:52.305Z",
+  "capturedAt": "2026-04-21T20:26:52.192Z",
   "itemCount": 209,
   "items": [
     {
@@ -79,14 +79,6 @@
       "id": "mar240895",
       "title": "Avengers Busiek Perez Omnibus HC Vol 02 Davis New Ptg DM Var",
       "url": "https://www.instocktrades.com/products/mar240895/avengers-busiek-perez-omnibus-hc-vol-02-davis-new-ptg-dm-var",
-      "price": "$81.25",
-      "priceValue": 81.25,
-      "discount": "35% off!"
-    },
-    {
-      "id": "mar240896",
-      "title": "Avengers Busiek Perez Omnibus HC Vol 02 Perez New Ptg DM Var",
-      "url": "https://www.instocktrades.com/products/mar240896/avengers-busiek-perez-omnibus-hc-vol-02-perez-new-ptg-dm-var",
       "price": "$81.25",
       "priceValue": 81.25,
       "discount": "35% off!"
@@ -1321,6 +1313,14 @@
       "url": "https://www.instocktrades.com/products/jul254699/superior-spider-man-returns-omnibus-hc-mark-bagley-cvr",
       "price": "$81.25",
       "priceValue": 81.25,
+      "discount": "35% off!"
+    },
+    {
+      "id": "feb250913",
+      "title": "Symbiote Spider-Man By Peter David Omnibus HC",
+      "url": "https://www.instocktrades.com/products/feb250913/symbiote-spider-man-by-peter-david-omnibus-hc",
+      "price": "$65.00",
+      "priceValue": 65,
       "discount": "35% off!"
     },
     {
