@@ -1,6 +1,6 @@
 {
   "monitorName": "Marvel Omnibus Catalog — InStockTrades",
-  "capturedAt": "2026-04-21T17:32:39.523Z",
+  "capturedAt": "2026-04-21T18:35:40.623Z",
   "itemCount": 206,
   "items": [
     {
@@ -908,14 +908,6 @@
       "discount": "35% off!"
     },
     {
-      "id": "sep221106",
-      "title": "Planet of the Apes Adv Orig Marvel Years Omnibus Gist HC",
-      "url": "https://www.instocktrades.com/products/sep221106/planet-of-the-apes-adv-orig-marvel-years-omnibus-gist-hc",
-      "price": "$65.00",
-      "priceValue": 65,
-      "discount": "35% off!"
-    },
-    {
       "id": "dec200646",
       "title": "Power Pack Classic Omnibus HC Vol 02 Brigman DM Var",
       "url": "https://www.instocktrades.com/products/dec200646/power-pack-classic-omnibus-hc-vol-02-brigman-dm-var",
@@ -1434,6 +1426,14 @@
       "price": "$81.25",
       "priceValue": 81.25,
       "discount": "35% off!"
+    },
+    {
+      "id": "oct254648d",
+      "title": "Uncanny X-Men By Kieron Gillen Omnibus HC",
+      "url": "https://www.instocktrades.com/products/oct254648d/uncanny-x-men-by-kieron-gillen-omnibus-hc",
+      "price": "$62.50",
+      "priceValue": 62.5,
+      "discount": "50% off!"
     },
     {
       "id": "may240844",
