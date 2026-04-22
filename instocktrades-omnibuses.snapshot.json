@@ -1,7 +1,7 @@
 {
   "monitorName": "Marvel Omnibus Catalog — InStockTrades",
-  "capturedAt": "2026-04-21T21:54:28.546Z",
-  "itemCount": 209,
+  "capturedAt": "2026-04-22T06:14:52.622Z",
+  "itemCount": 206,
   "items": [
     {
       "id": "nov247684a",
@@ -1252,14 +1252,6 @@
       "discount": "35% off!"
     },
     {
-      "id": "oct254639",
-      "title": "Star Wars the High Republic Phase III Trials of the Jedi Omnibus HC Camuncoli Cover [Dm Only]",
-      "url": "https://www.instocktrades.com/products/oct254639/star-wars-the-high-republic-phase-iii-trials-of-the-jedi-omnibus-hc-camuncoli-cover-[dm-only]",
-      "price": "$65.00",
-      "priceValue": 65,
-      "discount": "35% off!"
-    },
-    {
       "id": "oct254640",
       "title": "Star Wars the High Republic Phase III Trials of the Jedi Omnibus HC Phil Noto Cover",
       "url": "https://www.instocktrades.com/products/oct254640/star-wars-the-high-republic-phase-iii-trials-of-the-jedi-omnibus-hc-phil-noto-cover",
@@ -1335,14 +1327,6 @@
       "id": "feb250921d",
       "title": "The Mighty Thor Omnibus HC Vol 05",
       "url": "https://www.instocktrades.com/products/feb250921d/the-mighty-thor-omnibus-hc-vol-05",
-      "price": "$62.50",
-      "priceValue": 62.5,
-      "discount": "50% off!"
-    },
-    {
-      "id": "feb250922",
-      "title": "The Mighty Thor Omnibus HC Vol 05 DM Var",
-      "url": "https://www.instocktrades.com/products/feb250922/the-mighty-thor-omnibus-hc-vol-05-dm-var",
       "price": "$62.50",
       "priceValue": 62.5,
       "discount": "50% off!"
@@ -1458,14 +1442,6 @@
       "price": "$62.50",
       "priceValue": 62.5,
       "discount": "50% off!"
-    },
-    {
-      "id": "may240844",
-      "title": "What If Into the Multiverse Omnibus HC Vol 02",
-      "url": "https://www.instocktrades.com/products/may240844/what-if-into-the-multiverse-omnibus-hc-vol-02",
-      "price": "$81.25",
-      "priceValue": 81.25,
-      "discount": "35% off!"
     },
     {
       "id": "sep254801",
