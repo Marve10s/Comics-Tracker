@@ -1,7 +1,7 @@
 {
   "monitorName": "Marvel Omnibus Catalog — InStockTrades",
-  "capturedAt": "2026-04-23T20:29:42.959Z",
-  "itemCount": 204,
+  "capturedAt": "2026-04-23T20:56:20.537Z",
+  "itemCount": 203,
   "items": [
     {
       "id": "nov247684a",
@@ -183,14 +183,6 @@
       "id": "nov230679",
       "title": "Captain America By Mark Gruenwald Omnibus HC Vol 01",
       "url": "https://www.instocktrades.com/products/nov230679/captain-america-by-mark-gruenwald-omnibus-hc-vol-01",
-      "price": "$97.50",
-      "priceValue": 97.5,
-      "discount": "35% off!"
-    },
-    {
-      "id": "dec240847",
-      "title": "Captain America By Mark Gruenwald Omnibus HC Vol 02 DM Var",
-      "url": "https://www.instocktrades.com/products/dec240847/captain-america-by-mark-gruenwald-omnibus-hc-vol-02-dm-var",
       "price": "$97.50",
       "priceValue": 97.5,
       "discount": "35% off!"
