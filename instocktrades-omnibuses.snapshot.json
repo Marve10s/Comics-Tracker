@@ -1,7 +1,7 @@
 {
   "monitorName": "Marvel Omnibus Catalog — InStockTrades",
-  "capturedAt": "2026-04-23T15:45:03.605Z",
-  "itemCount": 205,
+  "capturedAt": "2026-04-23T17:40:29.268Z",
+  "itemCount": 204,
   "items": [
     {
       "id": "nov247684a",
@@ -1458,14 +1458,6 @@
       "price": "$62.50",
       "priceValue": 62.5,
       "discount": "50% off!"
-    },
-    {
-      "id": "oct240789",
-      "title": "Wolverine By Jason Aaron Omnibus HC Vol 01 David Finch CVR",
-      "url": "https://www.instocktrades.com/products/oct240789/wolverine-by-jason-aaron-omnibus-hc-vol-01-david-finch-cvr",
-      "price": "$65.00",
-      "priceValue": 65,
-      "discount": "35% off!"
     },
     {
       "id": "jan250957",
