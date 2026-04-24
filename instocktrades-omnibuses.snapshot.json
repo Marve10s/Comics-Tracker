@@ -1,7 +1,7 @@
 {
   "monitorName": "Marvel Omnibus Catalog — InStockTrades",
-  "capturedAt": "2026-04-24T20:24:32.585Z",
-  "itemCount": 203,
+  "capturedAt": "2026-04-24T20:55:45.105Z",
+  "itemCount": 202,
   "items": [
     {
       "id": "nov247684a",
@@ -1465,14 +1465,6 @@
       "url": "https://www.instocktrades.com/products/sep230907/wolverine-omnibus-hc-vol-05",
       "price": "$97.50",
       "priceValue": 97.5,
-      "discount": "35% off!"
-    },
-    {
-      "id": "nov240743",
-      "title": "Wolverine Omnibus HC Vol 06 David Winn DM Var",
-      "url": "https://www.instocktrades.com/products/nov240743/wolverine-omnibus-hc-vol-06-david-winn-dm-var",
-      "price": "$81.25",
-      "priceValue": 81.25,
       "discount": "35% off!"
     },
     {
