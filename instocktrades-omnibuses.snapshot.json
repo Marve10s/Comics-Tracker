@@ -1,7 +1,7 @@
 {
   "monitorName": "Marvel Omnibus Catalog — InStockTrades",
-  "capturedAt": "2026-04-25T21:51:19.314Z",
-  "itemCount": 202,
+  "capturedAt": "2026-04-26T06:51:07.363Z",
+  "itemCount": 201,
   "items": [
     {
       "id": "nov247684a",
@@ -1401,14 +1401,6 @@
       "url": "https://www.instocktrades.com/products/may250618/ultimate-spider-man-omnibus-hc-vol-05-david-lafuente-cvr",
       "price": "$65.00",
       "priceValue": 65,
-      "discount": "35% off!"
-    },
-    {
-      "id": "aug230952",
-      "title": "Ultimate X-Men Omnibus HC Vol 02",
-      "url": "https://www.instocktrades.com/products/aug230952/ultimate-x-men-omnibus-hc-vol-02",
-      "price": "$81.25",
-      "priceValue": 81.25,
       "discount": "35% off!"
     },
     {
