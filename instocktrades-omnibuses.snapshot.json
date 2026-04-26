@@ -1,7 +1,7 @@
 {
   "monitorName": "Marvel Omnibus Catalog — InStockTrades",
-  "capturedAt": "2026-04-26T16:22:30.137Z",
-  "itemCount": 201,
+  "capturedAt": "2026-04-26T16:55:14.772Z",
+  "itemCount": 200,
   "items": [
     {
       "id": "nov247684a",
@@ -1135,14 +1135,6 @@
       "id": "mar240856",
       "title": "Spider-Man Complete Black Costume Saga Omnibus HC",
       "url": "https://www.instocktrades.com/products/mar240856/spider-man-complete-black-costume-saga-omnibus-hc",
-      "price": "$81.25",
-      "priceValue": 81.25,
-      "discount": "35% off!"
-    },
-    {
-      "id": "mar240857",
-      "title": "Spider-Man Complete Black Costume Saga Omnibus HC Var DM Var",
-      "url": "https://www.instocktrades.com/products/mar240857/spider-man-complete-black-costume-saga-omnibus-hc-var-dm-var",
       "price": "$81.25",
       "priceValue": 81.25,
       "discount": "35% off!"
