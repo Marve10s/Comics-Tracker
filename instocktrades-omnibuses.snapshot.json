@@ -1,7 +1,7 @@
 {
   "monitorName": "Marvel Omnibus Catalog — InStockTrades",
-  "capturedAt": "2026-04-27T19:40:46.132Z",
-  "itemCount": 200,
+  "capturedAt": "2026-04-27T20:35:11.168Z",
+  "itemCount": 197,
   "items": [
     {
       "id": "nov247684a",
@@ -71,14 +71,6 @@
       "id": "mar210680",
       "title": "Amazing Spider-Man Omnibus HC Vol 05 Medina CVR",
       "url": "https://www.instocktrades.com/products/mar210680/amazing-spider-man-omnibus-hc-vol-05-medina-cvr",
-      "price": "$81.25",
-      "priceValue": 81.25,
-      "discount": "35% off!"
-    },
-    {
-      "id": "mar240895",
-      "title": "Avengers Busiek Perez Omnibus HC Vol 02 Davis New Ptg DM Var",
-      "url": "https://www.instocktrades.com/products/mar240895/avengers-busiek-perez-omnibus-hc-vol-02-davis-new-ptg-dm-var",
       "price": "$81.25",
       "priceValue": 81.25,
       "discount": "35% off!"
@@ -343,9 +335,9 @@
       "id": "jul240885",
       "title": "Dark Web Omnibus HC",
       "url": "https://www.instocktrades.com/products/jul240885/dark-web-omnibus-hc",
-      "price": "$45.00",
-      "priceValue": 45,
-      "discount": "55% off!"
+      "price": "$65.00",
+      "priceValue": 65,
+      "discount": "35% off!"
     },
     {
       "id": "jul240886",
@@ -764,14 +756,6 @@
       "discount": "35% off!"
     },
     {
-      "id": "oct230890",
-      "title": "Micronauts Original Marvel Years Omnibus HC Vol 01 Golden DM",
-      "url": "https://www.instocktrades.com/products/oct230890/micronauts-original-marvel-years-omnibus-hc-vol-01-golden-dm",
-      "price": "$81.25",
-      "priceValue": 81.25,
-      "discount": "35% off!"
-    },
-    {
       "id": "oct230890d",
       "title": "Micronauts Original Marvel Years Omnibus HC Vol 01 Golden DM",
       "url": "https://www.instocktrades.com/products/oct230890d/micronauts-original-marvel-years-omnibus-hc-vol-01-golden-dm",
@@ -786,14 +770,6 @@
       "price": "$62.50",
       "priceValue": 62.5,
       "discount": "50% off!"
-    },
-    {
-      "id": "mar240851",
-      "title": "Micronauts Original Marvel Years Omnibus HC Vol 02",
-      "url": "https://www.instocktrades.com/products/mar240851/micronauts-original-marvel-years-omnibus-hc-vol-02",
-      "price": "$81.25",
-      "priceValue": 81.25,
-      "discount": "35% off!"
     },
     {
       "id": "mar240851d",
@@ -924,14 +900,6 @@
       "discount": "35% off!"
     },
     {
-      "id": "apr240851",
-      "title": "Punisher Max By Aaron Dillon Omnibus HC New Ptg",
-      "url": "https://www.instocktrades.com/products/apr240851/punisher-max-by-aaron-dillon-omnibus-hc-new-ptg",
-      "price": "$65.00",
-      "priceValue": 65,
-      "discount": "35% off!"
-    },
-    {
       "id": "may250601",
       "title": "Return of Wolverine Omnibus HC John Cassaday CVR",
       "url": "https://www.instocktrades.com/products/may250601/return-of-wolverine-omnibus-hc-john-cassaday-cvr",
@@ -986,6 +954,14 @@
       "price": "$48.75",
       "priceValue": 48.75,
       "discount": "35% off!"
+    },
+    {
+      "id": "sep240930d",
+      "title": "Secret War By Bendis Omnibus HC Classic Costumes CVR",
+      "url": "https://www.instocktrades.com/products/sep240930d/secret-war-by-bendis-omnibus-hc-classic-costumes-cvr",
+      "price": "$37.50",
+      "priceValue": 37.5,
+      "discount": "50% off!"
     },
     {
       "id": "jul240883",
@@ -1303,9 +1279,9 @@
       "id": "feb250921",
       "title": "The Mighty Thor Omnibus HC Vol 05",
       "url": "https://www.instocktrades.com/products/feb250921/the-mighty-thor-omnibus-hc-vol-05",
-      "price": "$56.25",
-      "priceValue": 56.25,
-      "discount": "55% off!"
+      "price": "$81.25",
+      "priceValue": 81.25,
+      "discount": "35% off!"
     },
     {
       "id": "feb250921d",
@@ -1396,20 +1372,20 @@
       "discount": "35% off!"
     },
     {
-      "id": "jul254705d",
-      "title": "Ultimate X-Men Omnibus HC Vol 03 Michael Turner CVR",
-      "url": "https://www.instocktrades.com/products/jul254705d/ultimate-x-men-omnibus-hc-vol-03-michael-turner-cvr",
-      "price": "$62.50",
-      "priceValue": 62.5,
-      "discount": "50% off!"
-    },
-    {
       "id": "oct254648",
       "title": "Uncanny X-Men By Kieron Gillen Omnibus HC",
       "url": "https://www.instocktrades.com/products/oct254648/uncanny-x-men-by-kieron-gillen-omnibus-hc",
       "price": "$81.25",
       "priceValue": 81.25,
       "discount": "35% off!"
+    },
+    {
+      "id": "nov220854d",
+      "title": "Uncanny X-Men Omnibus HC Vol 05 Windsor Smith DM Var",
+      "url": "https://www.instocktrades.com/products/nov220854d/uncanny-x-men-omnibus-hc-vol-05-windsor-smith-dm-var",
+      "price": "$62.50",
+      "priceValue": 62.5,
+      "discount": "50% off!"
     },
     {
       "id": "sep254801",
