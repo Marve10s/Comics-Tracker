@@ -1,7 +1,7 @@
 {
   "monitorName": "Marvel Omnibus Catalog — InStockTrades",
-  "capturedAt": "2026-04-27T18:39:59.177Z",
-  "itemCount": 198,
+  "capturedAt": "2026-04-27T19:40:46.132Z",
+  "itemCount": 200,
   "items": [
     {
       "id": "nov247684a",
@@ -772,6 +772,14 @@
       "discount": "35% off!"
     },
     {
+      "id": "oct230890d",
+      "title": "Micronauts Original Marvel Years Omnibus HC Vol 01 Golden DM",
+      "url": "https://www.instocktrades.com/products/oct230890d/micronauts-original-marvel-years-omnibus-hc-vol-01-golden-dm",
+      "price": "$62.50",
+      "priceValue": 62.5,
+      "discount": "50% off!"
+    },
+    {
       "id": "oct230889",
       "title": "Micronauts Original Marvel Years Omnibus HC Vol 01 Guice DM",
       "url": "https://www.instocktrades.com/products/oct230889/micronauts-original-marvel-years-omnibus-hc-vol-01-guice-dm",
@@ -1386,6 +1394,14 @@
       "price": "$81.25",
       "priceValue": 81.25,
       "discount": "35% off!"
+    },
+    {
+      "id": "jul254705d",
+      "title": "Ultimate X-Men Omnibus HC Vol 03 Michael Turner CVR",
+      "url": "https://www.instocktrades.com/products/jul254705d/ultimate-x-men-omnibus-hc-vol-03-michael-turner-cvr",
+      "price": "$62.50",
+      "priceValue": 62.5,
+      "discount": "50% off!"
     },
     {
       "id": "oct254648",
