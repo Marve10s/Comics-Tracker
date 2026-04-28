@@ -1,7 +1,7 @@
 {
   "monitorName": "Marvel Omnibus Catalog — InStockTrades",
-  "capturedAt": "2026-04-28T16:19:46.027Z",
-  "itemCount": 196,
+  "capturedAt": "2026-04-28T17:11:50.949Z",
+  "itemCount": 195,
   "items": [
     {
       "id": "nov247684a",
@@ -1010,14 +1010,6 @@
       "price": "$81.25",
       "priceValue": 81.25,
       "discount": "35% off!"
-    },
-    {
-      "id": "jul254702d",
-      "title": "Sentry Omnibus HC David Finch CVR",
-      "url": "https://www.instocktrades.com/products/jul254702d/sentry-omnibus-hc-david-finch-cvr",
-      "price": "$62.50",
-      "priceValue": 62.5,
-      "discount": "50% off!"
     },
     {
       "id": "apr250686",
