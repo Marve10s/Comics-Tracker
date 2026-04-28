@@ -1,7 +1,7 @@
 {
   "monitorName": "Marvel Omnibus Catalog — InStockTrades",
-  "capturedAt": "2026-04-28T18:45:58.916Z",
-  "itemCount": 196,
+  "capturedAt": "2026-04-28T19:41:53.876Z",
+  "itemCount": 200,
   "items": [
     {
       "id": "nov247684a",
@@ -572,6 +572,14 @@
       "discount": "35% off!"
     },
     {
+      "id": "jul254685",
+      "title": "Iron Man Armor Wars Omnibus HC Mark Bright CVR",
+      "url": "https://www.instocktrades.com/products/jul254685/iron-man-armor-wars-omnibus-hc-mark-bright-cvr",
+      "price": "$65.00",
+      "priceValue": 65,
+      "discount": "35% off!"
+    },
+    {
       "id": "nov200604",
       "title": "Ka-Zar Savage Omnibus HC Anderson Action DM Var",
       "url": "https://www.instocktrades.com/products/nov200604/ka-zar-savage-omnibus-hc-anderson-action-dm-var",
@@ -799,6 +807,14 @@
       "id": "jun240901",
       "title": "Micronauts the Original Marvel Years Omnibus HC Vol 03 Golden CVR",
       "url": "https://www.instocktrades.com/products/jun240901/micronauts-the-original-marvel-years-omnibus-hc-vol-03-golden-cvr",
+      "price": "$81.25",
+      "priceValue": 81.25,
+      "discount": "35% off!"
+    },
+    {
+      "id": "jan240987",
+      "title": "Mystic Omnibus DM Var HC",
+      "url": "https://www.instocktrades.com/products/jan240987/mystic-omnibus-dm-var-hc",
       "price": "$81.25",
       "priceValue": 81.25,
       "discount": "35% off!"
@@ -1063,6 +1079,14 @@
       "id": "sep230899",
       "title": "Spider-Man 2099 Omnibus HC Vol 02 Bianchi CVR",
       "url": "https://www.instocktrades.com/products/sep230899/spider-man-2099-omnibus-hc-vol-02-bianchi-cvr",
+      "price": "$81.25",
+      "priceValue": 81.25,
+      "discount": "35% off!"
+    },
+    {
+      "id": "jun250621",
+      "title": "Spider-Man Brand New Day Omnibus HC Vol 02 Romita Jr CVR",
+      "url": "https://www.instocktrades.com/products/jun250621/spider-man-brand-new-day-omnibus-hc-vol-02-romita-jr-cvr",
       "price": "$81.25",
       "priceValue": 81.25,
       "discount": "35% off!"
@@ -1506,6 +1530,14 @@
       "price": "$67.50",
       "priceValue": 67.5,
       "discount": "55% off!"
+    },
+    {
+      "id": "may240843",
+      "title": "X-Men Decimation Omnibus HC DM Var Esad Ribic DM Var",
+      "url": "https://www.instocktrades.com/products/may240843/x-men-decimation-omnibus-hc-dm-var-esad-ribic-dm-var",
+      "price": "$81.25",
+      "priceValue": 81.25,
+      "discount": "35% off!"
     },
     {
       "id": "may240842",
