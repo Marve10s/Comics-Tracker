@@ -1,7 +1,7 @@
 {
   "monitorName": "Marvel Omnibus Catalog — InStockTrades",
-  "capturedAt": "2026-04-28T18:08:05.640Z",
-  "itemCount": 195,
+  "capturedAt": "2026-04-28T18:45:58.916Z",
+  "itemCount": 196,
   "items": [
     {
       "id": "nov247684a",
@@ -1330,6 +1330,14 @@
       "price": "$65.00",
       "priceValue": 65,
       "discount": "35% off!"
+    },
+    {
+      "id": "jun238705d",
+      "title": "Ultimate Comics Spider-Man Death of Spider-Man Omnibus HC",
+      "url": "https://www.instocktrades.com/products/jun238705d/ultimate-comics-spider-man-death-of-spider-man-omnibus-hc",
+      "price": "$50.00",
+      "priceValue": 50,
+      "discount": "50% off!"
     },
     {
       "id": "oct254646",
