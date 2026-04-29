@@ -1,7 +1,7 @@
 {
   "monitorName": "Marvel Omnibus Catalog — InStockTrades",
-  "capturedAt": "2026-04-29T19:41:25.417Z",
-  "itemCount": 197,
+  "capturedAt": "2026-04-29T20:35:00.498Z",
+  "itemCount": 196,
   "items": [
     {
       "id": "nov247684a",
@@ -65,14 +65,6 @@
       "url": "https://www.instocktrades.com/products/aug254848/amazing-spider-man-by-zeb-wells-omnibus-hc-vol-01",
       "price": "$65.00",
       "priceValue": 65,
-      "discount": "35% off!"
-    },
-    {
-      "id": "mar210680",
-      "title": "Amazing Spider-Man Omnibus HC Vol 05 Medina CVR",
-      "url": "https://www.instocktrades.com/products/mar210680/amazing-spider-man-omnibus-hc-vol-05-medina-cvr",
-      "price": "$81.25",
-      "priceValue": 81.25,
       "discount": "35% off!"
     },
     {
@@ -1372,6 +1364,14 @@
       "discount": "35% off!"
     },
     {
+      "id": "oct254649",
+      "title": "Uncanny X-Men By Kieron Gillen Omnibus HC Carlos Pacheco Cover [Dm Only]",
+      "url": "https://www.instocktrades.com/products/oct254649/uncanny-x-men-by-kieron-gillen-omnibus-hc-carlos-pacheco-cover-[dm-only]",
+      "price": "$81.25",
+      "priceValue": 81.25,
+      "discount": "35% off!"
+    },
+    {
       "id": "sep254801",
       "title": "What If Into the Multiverse Omnibus HC Vol 03 Doug Braithwaite Cover",
       "url": "https://www.instocktrades.com/products/sep254801/what-if-into-the-multiverse-omnibus-hc-vol-03-doug-braithwaite-cover",
@@ -1543,14 +1543,6 @@
       "id": "may240840",
       "title": "X-Men Road to Onslaught Omnibus HC",
       "url": "https://www.instocktrades.com/products/may240840/x-men-road-to-onslaught-omnibus-hc",
-      "price": "$81.25",
-      "priceValue": 81.25,
-      "discount": "35% off!"
-    },
-    {
-      "id": "aug254876",
-      "title": "X-Men Road to Onslaught Omnibus HC Vol 2 Sam Liu DM CVR **Limit 1 Per Customer**",
-      "url": "https://www.instocktrades.com/products/aug254876/x-men-road-to-onslaught-omnibus-hc-vol-2-sam-liu-dm-cvr-limit-1-per-customer-",
       "price": "$81.25",
       "priceValue": 81.25,
       "discount": "35% off!"
