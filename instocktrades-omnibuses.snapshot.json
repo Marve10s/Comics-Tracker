@@ -1,7 +1,7 @@
 {
   "monitorName": "Marvel Omnibus Catalog — InStockTrades",
-  "capturedAt": "2026-04-29T20:35:00.498Z",
-  "itemCount": 196,
+  "capturedAt": "2026-04-29T20:59:55.549Z",
+  "itemCount": 195,
   "items": [
     {
       "id": "nov247684a",
@@ -954,14 +954,6 @@
       "price": "$48.75",
       "priceValue": 48.75,
       "discount": "35% off!"
-    },
-    {
-      "id": "sep240930d",
-      "title": "Secret War By Bendis Omnibus HC Classic Costumes CVR",
-      "url": "https://www.instocktrades.com/products/sep240930d/secret-war-by-bendis-omnibus-hc-classic-costumes-cvr",
-      "price": "$37.50",
-      "priceValue": 37.5,
-      "discount": "50% off!"
     },
     {
       "id": "jul240883",
