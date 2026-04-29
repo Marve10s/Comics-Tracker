@@ -1,6 +1,6 @@
 {
   "monitorName": "Marvel Omnibus Catalog — InStockTrades",
-  "capturedAt": "2026-04-29T18:43:37.347Z",
+  "capturedAt": "2026-04-29T19:41:25.417Z",
   "itemCount": 197,
   "items": [
     {
@@ -249,14 +249,6 @@
       "url": "https://www.instocktrades.com/products/may240837/captain-america-omnibus-hc-vol-03-new-ptg-dm-var",
       "price": "$81.25",
       "priceValue": 81.25,
-      "discount": "35% off!"
-    },
-    {
-      "id": "sep230898",
-      "title": "Captain America Omnibus HC Vol 04 DM Var",
-      "url": "https://www.instocktrades.com/products/sep230898/captain-america-omnibus-hc-vol-04-dm-var",
-      "price": "$65.00",
-      "priceValue": 65,
       "discount": "35% off!"
     },
     {
@@ -1551,6 +1543,14 @@
       "id": "may240840",
       "title": "X-Men Road to Onslaught Omnibus HC",
       "url": "https://www.instocktrades.com/products/may240840/x-men-road-to-onslaught-omnibus-hc",
+      "price": "$81.25",
+      "priceValue": 81.25,
+      "discount": "35% off!"
+    },
+    {
+      "id": "aug254876",
+      "title": "X-Men Road to Onslaught Omnibus HC Vol 2 Sam Liu DM CVR **Limit 1 Per Customer**",
+      "url": "https://www.instocktrades.com/products/aug254876/x-men-road-to-onslaught-omnibus-hc-vol-2-sam-liu-dm-cvr-limit-1-per-customer-",
       "price": "$81.25",
       "priceValue": 81.25,
       "discount": "35% off!"
