@@ -1,7 +1,7 @@
 {
   "monitorName": "Marvel Omnibus Catalog — InStockTrades",
-  "capturedAt": "2026-04-29T17:41:35.194Z",
-  "itemCount": 198,
+  "capturedAt": "2026-04-29T18:43:37.347Z",
+  "itemCount": 197,
   "items": [
     {
       "id": "nov247684a",
@@ -1194,14 +1194,6 @@
       "price": "$62.50",
       "priceValue": 62.5,
       "discount": "50% off!"
-    },
-    {
-      "id": "apr230928",
-      "title": "Star Wars High Republic Season One Omnibus HC Vol 01 DM",
-      "url": "https://www.instocktrades.com/products/apr230928/star-wars-high-republic-season-one-omnibus-hc-vol-01-dm",
-      "price": "$65.00",
-      "priceValue": 65,
-      "discount": "35% off!"
     },
     {
       "id": "sep254794",
