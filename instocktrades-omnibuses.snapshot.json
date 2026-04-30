@@ -1,7 +1,7 @@
 {
   "monitorName": "Marvel Omnibus Catalog — InStockTrades",
-  "capturedAt": "2026-04-30T06:09:44.270Z",
-  "itemCount": 193,
+  "capturedAt": "2026-04-30T07:26:58.707Z",
+  "itemCount": 192,
   "items": [
     {
       "id": "nov247684a",
@@ -319,14 +319,6 @@
       "id": "jul240885",
       "title": "Dark Web Omnibus HC",
       "url": "https://www.instocktrades.com/products/jul240885/dark-web-omnibus-hc",
-      "price": "$65.00",
-      "priceValue": 65,
-      "discount": "35% off!"
-    },
-    {
-      "id": "jul240886",
-      "title": "Dark Web Omnibus HC DM Var",
-      "url": "https://www.instocktrades.com/products/jul240886/dark-web-omnibus-hc-dm-var",
       "price": "$65.00",
       "priceValue": 65,
       "discount": "35% off!"
