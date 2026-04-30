@@ -1,7 +1,7 @@
 {
   "monitorName": "Marvel Omnibus Catalog — InStockTrades",
-  "capturedAt": "2026-04-30T12:04:28.709Z",
-  "itemCount": 192,
+  "capturedAt": "2026-04-30T12:47:53.134Z",
+  "itemCount": 191,
   "items": [
     {
       "id": "nov247684a",
@@ -1081,14 +1081,6 @@
       "url": "https://www.instocktrades.com/products/mar240854/spider-man-by-michelinie-larsen-omnibus-hc-new-ptg",
       "price": "$65.00",
       "priceValue": 65,
-      "discount": "35% off!"
-    },
-    {
-      "id": "aug230956",
-      "title": "Spider-Man Clone Saga Omnibus HC Vol 02 New Ptg",
-      "url": "https://www.instocktrades.com/products/aug230956/spider-man-clone-saga-omnibus-hc-vol-02-new-ptg",
-      "price": "$97.50",
-      "priceValue": 97.5,
       "discount": "35% off!"
     },
     {
