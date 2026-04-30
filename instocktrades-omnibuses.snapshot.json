@@ -1,7 +1,7 @@
 {
   "monitorName": "Marvel Omnibus Catalog — InStockTrades",
-  "capturedAt": "2026-04-30T18:42:46.242Z",
-  "itemCount": 191,
+  "capturedAt": "2026-04-30T19:40:43.051Z",
+  "itemCount": 190,
   "items": [
     {
       "id": "nov247684a",
@@ -513,14 +513,6 @@
       "url": "https://www.instocktrades.com/products/dec220817/immortal-hulk-omnibus-hc",
       "price": "$97.50",
       "priceValue": 97.5,
-      "discount": "35% off!"
-    },
-    {
-      "id": "nov230681",
-      "title": "Incredible Hulk By Byrne and Casey Omnibus HC",
-      "url": "https://www.instocktrades.com/products/nov230681/incredible-hulk-by-byrne-and-casey-omnibus-hc",
-      "price": "$65.00",
-      "priceValue": 65,
       "discount": "35% off!"
     },
     {
