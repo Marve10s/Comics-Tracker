@@ -1,7 +1,7 @@
 {
   "monitorName": "Marvel Omnibus Catalog — InStockTrades",
-  "capturedAt": "2026-05-01T17:30:46.221Z",
-  "itemCount": 190,
+  "capturedAt": "2026-05-01T17:57:14.114Z",
+  "itemCount": 189,
   "items": [
     {
       "id": "nov247684a",
@@ -1210,14 +1210,6 @@
       "price": "$81.25",
       "priceValue": 81.25,
       "discount": "35% off!"
-    },
-    {
-      "id": "jul254699d",
-      "title": "Superior Spider-Man Returns Omnibus HC Mark Bagley CVR",
-      "url": "https://www.instocktrades.com/products/jul254699d/superior-spider-man-returns-omnibus-hc-mark-bagley-cvr",
-      "price": "$62.50",
-      "priceValue": 62.5,
-      "discount": "50% off!"
     },
     {
       "id": "feb250913",
