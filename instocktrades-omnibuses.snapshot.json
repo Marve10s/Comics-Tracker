@@ -1,7 +1,7 @@
 {
   "monitorName": "Marvel Omnibus Catalog — InStockTrades",
-  "capturedAt": "2026-05-03T19:30:33.205Z",
-  "itemCount": 190,
+  "capturedAt": "2026-05-03T19:55:38.685Z",
+  "itemCount": 189,
   "items": [
     {
       "id": "nov247684a",
@@ -295,14 +295,6 @@
       "id": "jun240908",
       "title": "Daredevil By Chip Zdarsky Omnibus HC Vol 02",
       "url": "https://www.instocktrades.com/products/jun240908/daredevil-by-chip-zdarsky-omnibus-hc-vol-02",
-      "price": "$65.00",
-      "priceValue": 65,
-      "discount": "35% off!"
-    },
-    {
-      "id": "nov220845",
-      "title": "Daredevil Omnibus HC Vol 02",
-      "url": "https://www.instocktrades.com/products/nov220845/daredevil-omnibus-hc-vol-02",
       "price": "$65.00",
       "priceValue": 65,
       "discount": "35% off!"
