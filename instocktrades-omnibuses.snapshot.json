@@ -1,7 +1,7 @@
 {
   "monitorName": "Marvel Omnibus Catalog — InStockTrades",
-  "capturedAt": "2026-05-05T18:43:54.066Z",
-  "itemCount": 192,
+  "capturedAt": "2026-05-05T19:41:16.487Z",
+  "itemCount": 193,
   "items": [
     {
       "id": "nov247684a",
@@ -1449,6 +1449,14 @@
       "url": "https://www.instocktrades.com/products/jan240847/x-factor-the-original-x-men-omnibus-hc-vol-01-dm-var",
       "price": "$81.25",
       "priceValue": 81.25,
+      "discount": "35% off!"
+    },
+    {
+      "id": "mar250617",
+      "title": "X-Men Age of Krakoa Dawn of X Omnibus HC Vol 01",
+      "url": "https://www.instocktrades.com/products/mar250617/x-men-age-of-krakoa-dawn-of-x-omnibus-hc-vol-01",
+      "price": "$97.50",
+      "priceValue": 97.5,
       "discount": "35% off!"
     },
     {
