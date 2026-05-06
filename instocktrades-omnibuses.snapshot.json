@@ -1,7 +1,7 @@
 {
   "monitorName": "Marvel Omnibus Catalog — InStockTrades",
-  "capturedAt": "2026-05-06T06:10:24.479Z",
-  "itemCount": 190,
+  "capturedAt": "2026-05-06T07:28:57.864Z",
+  "itemCount": 189,
   "items": [
     {
       "id": "nov247684a",
@@ -409,14 +409,6 @@
       "url": "https://www.instocktrades.com/products/oct240778/fantastic-four-doom-2099-omnibus-hc-pat-broderick-cvr",
       "price": "$97.50",
       "priceValue": 97.5,
-      "discount": "35% off!"
-    },
-    {
-      "id": "may240838",
-      "title": "Fantastic Four Omnibus HC Vol 05 Buckler CVR",
-      "url": "https://www.instocktrades.com/products/may240838/fantastic-four-omnibus-hc-vol-05-buckler-cvr",
-      "price": "$81.25",
-      "priceValue": 81.25,
       "discount": "35% off!"
     },
     {
