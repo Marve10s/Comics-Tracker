@@ -1,6 +1,6 @@
 {
   "monitorName": "Marvel Omnibus Catalog — InStockTrades",
-  "capturedAt": "2026-05-06T19:42:32.710Z",
+  "capturedAt": "2026-05-06T20:40:24.244Z",
   "itemCount": 188,
   "items": [
     {
@@ -1132,6 +1132,14 @@
       "discount": "40% off!"
     },
     {
+      "id": "apr250688",
+      "title": "Star Wars Legends the Old Republic Omnibus HC Vol 02",
+      "url": "https://www.instocktrades.com/products/apr250688/star-wars-legends-the-old-republic-omnibus-hc-vol-02",
+      "price": "$75.00",
+      "priceValue": 75,
+      "discount": "40% off!"
+    },
+    {
       "id": "dec240857",
       "title": "Star Wars Legends the Rebellion Omnibus HC Vol 03 DM Var",
       "url": "https://www.instocktrades.com/products/dec240857/star-wars-legends-the-rebellion-omnibus-hc-vol-03-dm-var",
@@ -1273,14 +1281,6 @@
       "url": "https://www.instocktrades.com/products/mar150783/ultimate-marvel-omnibus-hc-vol-01",
       "price": "$64.99",
       "priceValue": 64.99,
-      "discount": "35% off!"
-    },
-    {
-      "id": "may250618",
-      "title": "Ultimate Spider-Man Omnibus HC Vol 05 David Lafuente CVR",
-      "url": "https://www.instocktrades.com/products/may250618/ultimate-spider-man-omnibus-hc-vol-05-david-lafuente-cvr",
-      "price": "$65.00",
-      "priceValue": 65,
       "discount": "35% off!"
     },
     {
