@@ -1,7 +1,7 @@
 {
   "monitorName": "Marvel Omnibus Catalog — InStockTrades",
-  "capturedAt": "2026-05-07T13:13:25.288Z",
-  "itemCount": 188,
+  "capturedAt": "2026-05-07T14:26:36.685Z",
+  "itemCount": 186,
   "items": [
     {
       "id": "nov247684a",
@@ -274,14 +274,6 @@
       "price": "$97.50",
       "priceValue": 97.5,
       "discount": "35% off!"
-    },
-    {
-      "id": "oct254619d",
-      "title": "Daken Dark Wolverine Omnibus HC Giuseppe Camuncoli CVR DM Var",
-      "url": "https://www.instocktrades.com/products/oct254619d/daken-dark-wolverine-omnibus-hc-giuseppe-camuncoli-cvr-dm-var",
-      "price": "$75.00",
-      "priceValue": 75,
-      "discount": "50% off!"
     },
     {
       "id": "oct254620",
@@ -1127,14 +1119,6 @@
       "id": "sep254794",
       "title": "Star Wars Legends the Empire Omnibus HC Vol 04 Douglas Wheatley CVR",
       "url": "https://www.instocktrades.com/products/sep254794/star-wars-legends-the-empire-omnibus-hc-vol-04-douglas-wheatley-cvr",
-      "price": "$75.00",
-      "priceValue": 75,
-      "discount": "40% off!"
-    },
-    {
-      "id": "apr250688",
-      "title": "Star Wars Legends the Old Republic Omnibus HC Vol 02",
-      "url": "https://www.instocktrades.com/products/apr250688/star-wars-legends-the-old-republic-omnibus-hc-vol-02",
       "price": "$75.00",
       "priceValue": 75,
       "discount": "40% off!"
