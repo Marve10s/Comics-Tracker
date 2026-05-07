@@ -1,7 +1,7 @@
 {
   "monitorName": "Marvel Omnibus Catalog — InStockTrades",
-  "capturedAt": "2026-05-07T09:28:02.403Z",
-  "itemCount": 188,
+  "capturedAt": "2026-05-07T10:26:19.165Z",
+  "itemCount": 187,
   "items": [
     {
       "id": "nov247684a",
@@ -818,14 +818,6 @@
       "price": "$37.50",
       "priceValue": 37.5,
       "discount": "50% off!"
-    },
-    {
-      "id": "feb230909",
-      "title": "Phoenix Omnibus HC Vol 02",
-      "url": "https://www.instocktrades.com/products/feb230909/phoenix-omnibus-hc-vol-02",
-      "price": "$97.50",
-      "priceValue": 97.5,
-      "discount": "35% off!"
     },
     {
       "id": "feb230910",
