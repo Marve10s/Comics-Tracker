@@ -1,7 +1,7 @@
 {
   "monitorName": "Marvel Omnibus Catalog — InStockTrades",
-  "capturedAt": "2026-05-07T12:14:14.392Z",
-  "itemCount": 187,
+  "capturedAt": "2026-05-07T13:13:25.288Z",
+  "itemCount": 188,
   "items": [
     {
       "id": "nov247684a",
@@ -274,6 +274,14 @@
       "price": "$97.50",
       "priceValue": 97.5,
       "discount": "35% off!"
+    },
+    {
+      "id": "oct254619d",
+      "title": "Daken Dark Wolverine Omnibus HC Giuseppe Camuncoli CVR DM Var",
+      "url": "https://www.instocktrades.com/products/oct254619d/daken-dark-wolverine-omnibus-hc-giuseppe-camuncoli-cvr-dm-var",
+      "price": "$75.00",
+      "priceValue": 75,
+      "discount": "50% off!"
     },
     {
       "id": "oct254620",
