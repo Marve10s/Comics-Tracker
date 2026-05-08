@@ -1,7 +1,7 @@
 {
   "monitorName": "Marvel Omnibus Catalog — InStockTrades",
-  "capturedAt": "2026-05-08T19:40:36.295Z",
-  "itemCount": 186,
+  "capturedAt": "2026-05-08T20:31:43.051Z",
+  "itemCount": 185,
   "items": [
     {
       "id": "nov247684a",
@@ -186,14 +186,6 @@
       "price": "$81.25",
       "priceValue": 81.25,
       "discount": "35% off!"
-    },
-    {
-      "id": "mar230946",
-      "title": "Captain America Lives Omnibus HC DM Var",
-      "url": "https://www.instocktrades.com/products/mar230946/captain-america-lives-omnibus-hc-dm-var",
-      "price": "$45.00",
-      "priceValue": 45,
-      "discount": "40% off!"
     },
     {
       "id": "oct230892",
