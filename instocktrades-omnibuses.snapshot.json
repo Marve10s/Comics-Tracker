@@ -1,7 +1,7 @@
 {
   "monitorName": "Marvel Omnibus Catalog — InStockTrades",
-  "capturedAt": "2026-05-08T21:57:20.976Z",
-  "itemCount": 185,
+  "capturedAt": "2026-05-09T06:01:15.681Z",
+  "itemCount": 183,
   "items": [
     {
       "id": "nov247684a",
@@ -113,14 +113,6 @@
       "url": "https://www.instocktrades.com/products/apr221097/best-marvel-stories-by-stan-lee-omnibus-hc-dm-var",
       "price": "$65.00",
       "priceValue": 65,
-      "discount": "35% off!"
-    },
-    {
-      "id": "aug230946",
-      "title": "Black Panther By Christopher Priest Omnibus HC Vol 02 Sharp",
-      "url": "https://www.instocktrades.com/products/aug230946/black-panther-by-christopher-priest-omnibus-hc-vol-02-sharp",
-      "price": "$81.25",
-      "priceValue": 81.25,
       "discount": "35% off!"
     },
     {
@@ -935,14 +927,6 @@
       "id": "aug254866",
       "title": "Secret Wars Battleworld Omnibus HC Vol 03 Andrea Sorrentino CVR DM Var",
       "url": "https://www.instocktrades.com/products/aug254866/secret-wars-battleworld-omnibus-hc-vol-03-andrea-sorrentino-cvr-dm-var",
-      "price": "$81.25",
-      "priceValue": 81.25,
-      "discount": "35% off!"
-    },
-    {
-      "id": "jul254702",
-      "title": "Sentry Omnibus HC David Finch CVR",
-      "url": "https://www.instocktrades.com/products/jul254702/sentry-omnibus-hc-david-finch-cvr",
       "price": "$81.25",
       "priceValue": 81.25,
       "discount": "35% off!"
