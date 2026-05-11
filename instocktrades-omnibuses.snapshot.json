@@ -1,7 +1,7 @@
 {
   "monitorName": "Marvel Omnibus Catalog — InStockTrades",
-  "capturedAt": "2026-05-11T12:31:41.009Z",
-  "itemCount": 183,
+  "capturedAt": "2026-05-11T13:33:45.790Z",
+  "itemCount": 186,
   "items": [
     {
       "id": "nov247684a",
@@ -26,6 +26,14 @@
       "price": "$65.00",
       "priceValue": 65,
       "discount": "35% off!"
+    },
+    {
+      "id": "sep254776d",
+      "title": "Agents of S.H.I.E.L.D. Omnibus HC Mike Norton DM Var",
+      "url": "https://www.instocktrades.com/products/sep254776d/agents-of-s-h-i-e-l-d-omnibus-hc-mike-norton-dm-var",
+      "price": "$50.00",
+      "priceValue": 50,
+      "discount": "50% off!"
     },
     {
       "id": "jun250617",
@@ -268,12 +276,28 @@
       "discount": "35% off!"
     },
     {
+      "id": "dec230750d",
+      "title": "Daredevil By Chip Zdarsky Omnibus HC Vol 01",
+      "url": "https://www.instocktrades.com/products/dec230750d/daredevil-by-chip-zdarsky-omnibus-hc-vol-01",
+      "price": "$50.00",
+      "priceValue": 50,
+      "discount": "50% off!"
+    },
+    {
       "id": "jun240908",
       "title": "Daredevil By Chip Zdarsky Omnibus HC Vol 02",
       "url": "https://www.instocktrades.com/products/jun240908/daredevil-by-chip-zdarsky-omnibus-hc-vol-02",
       "price": "$65.00",
       "priceValue": 65,
       "discount": "35% off!"
+    },
+    {
+      "id": "jun240908d",
+      "title": "Daredevil By Chip Zdarsky Omnibus HC Vol 02",
+      "url": "https://www.instocktrades.com/products/jun240908d/daredevil-by-chip-zdarsky-omnibus-hc-vol-02",
+      "price": "$50.00",
+      "priceValue": 50,
+      "discount": "50% off!"
     },
     {
       "id": "jan240841",
