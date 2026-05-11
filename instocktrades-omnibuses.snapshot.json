@@ -1,7 +1,7 @@
 {
   "monitorName": "Marvel Omnibus Catalog — InStockTrades",
-  "capturedAt": "2026-05-11T19:42:22.939Z",
-  "itemCount": 186,
+  "capturedAt": "2026-05-11T20:44:04.102Z",
+  "itemCount": 184,
   "items": [
     {
       "id": "nov247684a",
@@ -265,14 +265,6 @@
       "url": "https://www.instocktrades.com/products/oct254620/daken-dark-wolverine-omnibus-hc-leinil-yu-cvr",
       "price": "$97.50",
       "priceValue": 97.5,
-      "discount": "35% off!"
-    },
-    {
-      "id": "dec230750",
-      "title": "Daredevil By Chip Zdarsky Omnibus HC Vol 01",
-      "url": "https://www.instocktrades.com/products/dec230750/daredevil-by-chip-zdarsky-omnibus-hc-vol-01",
-      "price": "$65.00",
-      "priceValue": 65,
       "discount": "35% off!"
     },
     {
@@ -767,14 +759,6 @@
       "id": "feb250916",
       "title": "Namor the Sub-Mariner Omnibus HC Vol 01 DM Var",
       "url": "https://www.instocktrades.com/products/feb250916/namor-the-sub-mariner-omnibus-hc-vol-01-dm-var",
-      "price": "$81.25",
-      "priceValue": 81.25,
-      "discount": "35% off!"
-    },
-    {
-      "id": "apr250680",
-      "title": "New Avengers By Brian Michael Bendis Omnibus HC Vol 2",
-      "url": "https://www.instocktrades.com/products/apr250680/new-avengers-by-brian-michael-bendis-omnibus-hc-vol-2",
       "price": "$81.25",
       "priceValue": 81.25,
       "discount": "35% off!"
