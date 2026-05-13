@@ -1,6 +1,6 @@
 {
   "monitorName": "Marvel Omnibus Catalog — InStockTrades",
-  "capturedAt": "2026-05-13T20:14:11.913Z",
+  "capturedAt": "2026-05-13T21:09:19.805Z",
   "itemCount": 185,
   "items": [
     {
@@ -471,14 +471,6 @@
       "id": "dec220817",
       "title": "Immortal Hulk Omnibus HC",
       "url": "https://www.instocktrades.com/products/dec220817/immortal-hulk-omnibus-hc",
-      "price": "$97.50",
-      "priceValue": 97.5,
-      "discount": "35% off!"
-    },
-    {
-      "id": "dec220818",
-      "title": "Immortal Hulk Omnibus HC Alex Ross DM Var",
-      "url": "https://www.instocktrades.com/products/dec220818/immortal-hulk-omnibus-hc-alex-ross-dm-var",
       "price": "$97.50",
       "priceValue": 97.5,
       "discount": "35% off!"
@@ -1266,6 +1258,14 @@
       "price": "$81.25",
       "priceValue": 81.25,
       "discount": "35% off!"
+    },
+    {
+      "id": "oct254648d",
+      "title": "Uncanny X-Men By Kieron Gillen Omnibus HC",
+      "url": "https://www.instocktrades.com/products/oct254648d/uncanny-x-men-by-kieron-gillen-omnibus-hc",
+      "price": "$62.50",
+      "priceValue": 62.5,
+      "discount": "50% off!"
     },
     {
       "id": "sep254801",
