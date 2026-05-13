@@ -1,7 +1,7 @@
 {
   "monitorName": "Marvel Omnibus Catalog — InStockTrades",
-  "capturedAt": "2026-05-13T19:13:37.906Z",
-  "itemCount": 183,
+  "capturedAt": "2026-05-13T20:14:11.913Z",
+  "itemCount": 185,
   "items": [
     {
       "id": "nov247684a",
@@ -471,6 +471,14 @@
       "id": "dec220817",
       "title": "Immortal Hulk Omnibus HC",
       "url": "https://www.instocktrades.com/products/dec220817/immortal-hulk-omnibus-hc",
+      "price": "$97.50",
+      "priceValue": 97.5,
+      "discount": "35% off!"
+    },
+    {
+      "id": "dec220818",
+      "title": "Immortal Hulk Omnibus HC Alex Ross DM Var",
+      "url": "https://www.instocktrades.com/products/dec220818/immortal-hulk-omnibus-hc-alex-ross-dm-var",
       "price": "$97.50",
       "priceValue": 97.5,
       "discount": "35% off!"
@@ -1343,6 +1351,14 @@
       "id": "feb230908",
       "title": "Wonder Man Early Years Omnibus HC DM Var",
       "url": "https://www.instocktrades.com/products/feb230908/wonder-man-early-years-omnibus-hc-dm-var",
+      "price": "$81.25",
+      "priceValue": 81.25,
+      "discount": "35% off!"
+    },
+    {
+      "id": "aug230950",
+      "title": "X-Factor By Peter David Omnibus HC Vol 03",
+      "url": "https://www.instocktrades.com/products/aug230950/x-factor-by-peter-david-omnibus-hc-vol-03",
       "price": "$81.25",
       "priceValue": 81.25,
       "discount": "35% off!"
