@@ -1,7 +1,7 @@
 {
   "monitorName": "Marvel Omnibus Catalog — InStockTrades",
-  "capturedAt": "2026-05-14T11:21:20.807Z",
-  "itemCount": 185,
+  "capturedAt": "2026-05-14T12:11:07.113Z",
+  "itemCount": 184,
   "items": [
     {
       "id": "nov247684a",
@@ -1178,14 +1178,6 @@
       "price": "$81.25",
       "priceValue": 81.25,
       "discount": "35% off!"
-    },
-    {
-      "id": "feb250921d",
-      "title": "The Mighty Thor Omnibus HC Vol 05",
-      "url": "https://www.instocktrades.com/products/feb250921d/the-mighty-thor-omnibus-hc-vol-05",
-      "price": "$62.50",
-      "priceValue": 62.5,
-      "discount": "50% off!"
     },
     {
       "id": "mar240858",
