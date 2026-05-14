@@ -1,6 +1,6 @@
 {
   "monitorName": "Marvel Omnibus Catalog — InStockTrades",
-  "capturedAt": "2026-05-13T21:09:19.805Z",
+  "capturedAt": "2026-05-14T06:37:29.085Z",
   "itemCount": 185,
   "items": [
     {
@@ -1076,6 +1076,14 @@
       "discount": "35% off!"
     },
     {
+      "id": "may250609d",
+      "title": "Star Wars Doctor Aphra Friends & Enemies Omnibus HC DM Var",
+      "url": "https://www.instocktrades.com/products/may250609d/star-wars-doctor-aphra-friends-enemies-omnibus-hc-dm-var",
+      "price": "$37.50",
+      "priceValue": 37.5,
+      "discount": "50% off!"
+    },
+    {
       "id": "aug254872",
       "title": "Star Wars Hidden Empire Omnibus HC Paulo Siqueira CVR",
       "url": "https://www.instocktrades.com/products/aug254872/star-wars-hidden-empire-omnibus-hc-paulo-siqueira-cvr",
@@ -1258,14 +1266,6 @@
       "price": "$81.25",
       "priceValue": 81.25,
       "discount": "35% off!"
-    },
-    {
-      "id": "oct254648d",
-      "title": "Uncanny X-Men By Kieron Gillen Omnibus HC",
-      "url": "https://www.instocktrades.com/products/oct254648d/uncanny-x-men-by-kieron-gillen-omnibus-hc",
-      "price": "$62.50",
-      "priceValue": 62.5,
-      "discount": "50% off!"
     },
     {
       "id": "sep254801",
