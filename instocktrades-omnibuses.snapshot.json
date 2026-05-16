@@ -1,7 +1,7 @@
 {
   "monitorName": "Marvel Omnibus Catalog — InStockTrades",
-  "capturedAt": "2026-05-15T21:57:15.262Z",
-  "itemCount": 184,
+  "capturedAt": "2026-05-16T06:06:01.777Z",
+  "itemCount": 183,
   "items": [
     {
       "id": "nov247684a",
@@ -1034,14 +1034,6 @@
       "price": "$65.00",
       "priceValue": 65,
       "discount": "35% off!"
-    },
-    {
-      "id": "feb250925d",
-      "title": "Spider-Man Gang War Omnibus HC DM Var",
-      "url": "https://www.instocktrades.com/products/feb250925d/spider-man-gang-war-omnibus-hc-dm-var",
-      "price": "$50.00",
-      "priceValue": 50,
-      "discount": "50% off!"
     },
     {
       "id": "oct230903",
