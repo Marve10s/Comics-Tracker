@@ -1,7 +1,7 @@
 {
   "monitorName": "Marvel Omnibus Catalog — InStockTrades",
-  "capturedAt": "2026-05-17T13:40:46.598Z",
-  "itemCount": 181,
+  "capturedAt": "2026-05-17T14:38:28.064Z",
+  "itemCount": 180,
   "items": [
     {
       "id": "nov247684a",
@@ -1058,14 +1058,6 @@
       "price": "$48.75",
       "priceValue": 48.75,
       "discount": "35% off!"
-    },
-    {
-      "id": "may250609d",
-      "title": "Star Wars Doctor Aphra Friends & Enemies Omnibus HC DM Var",
-      "url": "https://www.instocktrades.com/products/may250609d/star-wars-doctor-aphra-friends-enemies-omnibus-hc-dm-var",
-      "price": "$37.50",
-      "priceValue": 37.5,
-      "discount": "50% off!"
     },
     {
       "id": "aug254872",
