@@ -1,7 +1,7 @@
 {
   "monitorName": "Marvel Omnibus Catalog — InStockTrades",
-  "capturedAt": "2026-05-17T09:15:15.997Z",
-  "itemCount": 182,
+  "capturedAt": "2026-05-17T10:09:40.172Z",
+  "itemCount": 181,
   "items": [
     {
       "id": "nov247684a",
@@ -1281,14 +1281,6 @@
       "url": "https://www.instocktrades.com/products/jan250957/wolverine-goes-to-hell-omnibus-hc-jae-lee-cvr",
       "price": "$81.25",
       "priceValue": 81.25,
-      "discount": "35% off!"
-    },
-    {
-      "id": "sep230907",
-      "title": "Wolverine Omnibus HC Vol 05",
-      "url": "https://www.instocktrades.com/products/sep230907/wolverine-omnibus-hc-vol-05",
-      "price": "$97.50",
-      "priceValue": 97.5,
       "discount": "35% off!"
     },
     {
