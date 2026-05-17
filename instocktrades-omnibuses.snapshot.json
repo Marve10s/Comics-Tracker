@@ -1,7 +1,7 @@
 {
   "monitorName": "Marvel Omnibus Catalog — InStockTrades",
-  "capturedAt": "2026-05-17T07:32:13.428Z",
-  "itemCount": 183,
+  "capturedAt": "2026-05-17T08:25:45.313Z",
+  "itemCount": 182,
   "items": [
     {
       "id": "nov247684a",
@@ -1033,14 +1033,6 @@
       "url": "https://www.instocktrades.com/products/feb250925/spider-man-gang-war-omnibus-hc-dm-var",
       "price": "$65.00",
       "priceValue": 65,
-      "discount": "35% off!"
-    },
-    {
-      "id": "oct230903",
-      "title": "Star Wars By Gillen Pak Omnibus HC",
-      "url": "https://www.instocktrades.com/products/oct230903/star-wars-by-gillen-pak-omnibus-hc",
-      "price": "$81.25",
-      "priceValue": 81.25,
       "discount": "35% off!"
     },
     {
