@@ -1,7 +1,7 @@
 {
   "monitorName": "Marvel Omnibus Catalog — InStockTrades",
-  "capturedAt": "2026-05-18T19:11:55.236Z",
-  "itemCount": 180,
+  "capturedAt": "2026-05-18T20:12:02.582Z",
+  "itemCount": 178,
   "items": [
     {
       "id": "nov247684a",
@@ -964,14 +964,6 @@
       "discount": "35% off!"
     },
     {
-      "id": "sep221114",
-      "title": "Spider-Man 2099 Omnibus HC Vol 01 Leonardi CVR",
-      "url": "https://www.instocktrades.com/products/sep221114/spider-man-2099-omnibus-hc-vol-01-leonardi-cvr",
-      "price": "$97.50",
-      "priceValue": 97.5,
-      "discount": "35% off!"
-    },
-    {
       "id": "sep230899",
       "title": "Spider-Man 2099 Omnibus HC Vol 02 Bianchi CVR",
       "url": "https://www.instocktrades.com/products/sep230899/spider-man-2099-omnibus-hc-vol-02-bianchi-cvr",
@@ -1050,14 +1042,6 @@
       "price": "$37.50",
       "priceValue": 37.5,
       "discount": "50% off!"
-    },
-    {
-      "id": "may250609",
-      "title": "Star Wars Doctor Aphra Friends & Enemies Omnibus HC DM Var",
-      "url": "https://www.instocktrades.com/products/may250609/star-wars-doctor-aphra-friends-enemies-omnibus-hc-dm-var",
-      "price": "$48.75",
-      "priceValue": 48.75,
-      "discount": "35% off!"
     },
     {
       "id": "aug254872",
