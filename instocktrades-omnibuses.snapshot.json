@@ -1,7 +1,7 @@
 {
   "monitorName": "Marvel Omnibus Catalog — InStockTrades",
-  "capturedAt": "2026-05-19T16:38:29.867Z",
-  "itemCount": 182,
+  "capturedAt": "2026-05-19T17:52:20.779Z",
+  "itemCount": 181,
   "items": [
     {
       "id": "nov247684a",
@@ -490,14 +490,6 @@
       "price": "$56.25",
       "priceValue": 56.25,
       "discount": "55% off!"
-    },
-    {
-      "id": "may250613",
-      "title": "Incredible Hulk Omnibus HC Vol 03 DM Var",
-      "url": "https://www.instocktrades.com/products/may250613/incredible-hulk-omnibus-hc-vol-03-dm-var",
-      "price": "$81.25",
-      "priceValue": 81.25,
-      "discount": "35% off!"
     },
     {
       "id": "aug211272",
