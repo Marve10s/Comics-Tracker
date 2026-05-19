@@ -1,7 +1,7 @@
 {
   "monitorName": "Marvel Omnibus Catalog — InStockTrades",
-  "capturedAt": "2026-05-19T15:17:10.515Z",
-  "itemCount": 181,
+  "capturedAt": "2026-05-19T16:38:29.867Z",
+  "itemCount": 182,
   "items": [
     {
       "id": "nov247684a",
@@ -1068,6 +1068,14 @@
       "discount": "50% off!"
     },
     {
+      "id": "nov254557",
+      "title": "Star Wars Legends Legacy Omnibus HC Vol 01 Jan Duursema Cover",
+      "url": "https://www.instocktrades.com/products/nov254557/star-wars-legends-legacy-omnibus-hc-vol-01-jan-duursema-cover",
+      "price": "$81.25",
+      "priceValue": 81.25,
+      "discount": "35% off!"
+    },
+    {
       "id": "sep254794",
       "title": "Star Wars Legends the Empire Omnibus HC Vol 04 Douglas Wheatley CVR",
       "url": "https://www.instocktrades.com/products/sep254794/star-wars-legends-the-empire-omnibus-hc-vol-04-douglas-wheatley-cvr",
@@ -1172,6 +1180,14 @@
       "discount": "35% off!"
     },
     {
+      "id": "oct254644",
+      "title": "Thunderbolts Dark Reign Omnibus HC Marko Djurdjevic Cover",
+      "url": "https://www.instocktrades.com/products/oct254644/thunderbolts-dark-reign-omnibus-hc-marko-djurdjevic-cover",
+      "price": "$97.50",
+      "priceValue": 97.5,
+      "discount": "35% off!"
+    },
+    {
       "id": "jul210769",
       "title": "Thunderbolts Omnibus HC Vol 02 Bagley CVR",
       "url": "https://www.instocktrades.com/products/jul210769/thunderbolts-omnibus-hc-vol-02-bagley-cvr",
@@ -1193,14 +1209,6 @@
       "url": "https://www.instocktrades.com/products/may190947/timelys-greatest-hc-golden-age-simon-kirby-omnibus",
       "price": "$97.50",
       "priceValue": 97.5,
-      "discount": "35% off!"
-    },
-    {
-      "id": "mar250610",
-      "title": "Tomb of Dracula Omnibus HC Vol 01 Neal Adams CVR",
-      "url": "https://www.instocktrades.com/products/mar250610/tomb-of-dracula-omnibus-hc-vol-01-neal-adams-cvr",
-      "price": "$65.00",
-      "priceValue": 65,
       "discount": "35% off!"
     },
     {
