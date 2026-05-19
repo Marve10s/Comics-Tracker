@@ -1,7 +1,7 @@
 {
   "monitorName": "Marvel Omnibus Catalog — InStockTrades",
-  "capturedAt": "2026-05-19T13:40:59.436Z",
-  "itemCount": 178,
+  "capturedAt": "2026-05-19T15:17:10.515Z",
+  "itemCount": 181,
   "items": [
     {
       "id": "nov247684a",
@@ -324,6 +324,14 @@
       "discount": "50% off!"
     },
     {
+      "id": "mar250620",
+      "title": "Death of Captain Marvel Omnibus HC Vol 02 DM Var",
+      "url": "https://www.instocktrades.com/products/mar250620/death-of-captain-marvel-omnibus-hc-vol-02-dm-var",
+      "price": "$81.25",
+      "priceValue": 81.25,
+      "discount": "35% off!"
+    },
+    {
       "id": "mar250608",
       "title": "Doctor Strange By Jed Mackay Omnibus HC Ross CVR",
       "url": "https://www.instocktrades.com/products/mar250608/doctor-strange-by-jed-mackay-omnibus-hc-ross-cvr",
@@ -482,6 +490,14 @@
       "price": "$56.25",
       "priceValue": 56.25,
       "discount": "55% off!"
+    },
+    {
+      "id": "may250613",
+      "title": "Incredible Hulk Omnibus HC Vol 03 DM Var",
+      "url": "https://www.instocktrades.com/products/may250613/incredible-hulk-omnibus-hc-vol-03-dm-var",
+      "price": "$81.25",
+      "priceValue": 81.25,
+      "discount": "35% off!"
     },
     {
       "id": "aug211272",
@@ -1177,6 +1193,14 @@
       "url": "https://www.instocktrades.com/products/may190947/timelys-greatest-hc-golden-age-simon-kirby-omnibus",
       "price": "$97.50",
       "priceValue": 97.5,
+      "discount": "35% off!"
+    },
+    {
+      "id": "mar250610",
+      "title": "Tomb of Dracula Omnibus HC Vol 01 Neal Adams CVR",
+      "url": "https://www.instocktrades.com/products/mar250610/tomb-of-dracula-omnibus-hc-vol-01-neal-adams-cvr",
+      "price": "$65.00",
+      "priceValue": 65,
       "discount": "35% off!"
     },
     {
