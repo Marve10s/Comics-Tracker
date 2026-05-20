@@ -1,7 +1,7 @@
 {
   "monitorName": "Marvel Omnibus Catalog — InStockTrades",
-  "capturedAt": "2026-05-20T17:18:07.113Z",
-  "itemCount": 180,
+  "capturedAt": "2026-05-20T18:25:36.565Z",
+  "itemCount": 182,
   "items": [
     {
       "id": "nov247684a",
@@ -265,6 +265,14 @@
       "url": "https://www.instocktrades.com/products/oct254620/daken-dark-wolverine-omnibus-hc-leinil-yu-cvr",
       "price": "$97.50",
       "priceValue": 97.5,
+      "discount": "35% off!"
+    },
+    {
+      "id": "dec230750",
+      "title": "Daredevil By Chip Zdarsky Omnibus HC Vol 01",
+      "url": "https://www.instocktrades.com/products/dec230750/daredevil-by-chip-zdarsky-omnibus-hc-vol-01",
+      "price": "$65.00",
+      "priceValue": 65,
       "discount": "35% off!"
     },
     {
@@ -1407,6 +1415,14 @@
       "id": "dec240859",
       "title": "X-Men Onslaught Aftermath Omnibus HC Adam Kubert CVR",
       "url": "https://www.instocktrades.com/products/dec240859/x-men-onslaught-aftermath-omnibus-hc-adam-kubert-cvr",
+      "price": "$65.00",
+      "priceValue": 65,
+      "discount": "35% off!"
+    },
+    {
+      "id": "dec240860",
+      "title": "X-Men Onslaught Aftermath Omnibus HC Epting DM Var",
+      "url": "https://www.instocktrades.com/products/dec240860/x-men-onslaught-aftermath-omnibus-hc-epting-dm-var",
       "price": "$65.00",
       "priceValue": 65,
       "discount": "35% off!"
