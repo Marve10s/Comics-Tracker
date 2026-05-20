@@ -1,7 +1,7 @@
 {
   "monitorName": "Marvel Omnibus Catalog — InStockTrades",
-  "capturedAt": "2026-05-20T09:52:41.651Z",
-  "itemCount": 180,
+  "capturedAt": "2026-05-20T11:11:59.065Z",
+  "itemCount": 179,
   "items": [
     {
       "id": "nov247684a",
@@ -1050,14 +1050,6 @@
       "price": "$62.50",
       "priceValue": 62.5,
       "discount": "50% off!"
-    },
-    {
-      "id": "nov254557",
-      "title": "Star Wars Legends Legacy Omnibus HC Vol 01 Jan Duursema Cover",
-      "url": "https://www.instocktrades.com/products/nov254557/star-wars-legends-legacy-omnibus-hc-vol-01-jan-duursema-cover",
-      "price": "$81.25",
-      "priceValue": 81.25,
-      "discount": "35% off!"
     },
     {
       "id": "sep254794",
