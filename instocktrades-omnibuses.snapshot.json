@@ -1,7 +1,7 @@
 {
   "monitorName": "Marvel Omnibus Catalog — InStockTrades",
-  "capturedAt": "2026-05-19T21:39:49.239Z",
-  "itemCount": 181,
+  "capturedAt": "2026-05-20T06:54:33.836Z",
+  "itemCount": 180,
   "items": [
     {
       "id": "nov247684a",
@@ -794,14 +794,6 @@
       "price": "$48.75",
       "priceValue": 48.75,
       "discount": "35% off!"
-    },
-    {
-      "id": "oct210974d",
-      "title": "Official Handbook Marvel 89 Omnibus HC",
-      "url": "https://www.instocktrades.com/products/oct210974d/official-handbook-marvel-89-omnibus-hc",
-      "price": "$37.50",
-      "priceValue": 37.5,
-      "discount": "50% off!"
     },
     {
       "id": "feb230910",
