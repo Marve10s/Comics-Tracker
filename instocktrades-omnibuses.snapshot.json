@@ -1,7 +1,7 @@
 {
   "monitorName": "Marvel Omnibus Catalog — InStockTrades",
-  "capturedAt": "2026-05-22T14:28:17.200Z",
-  "itemCount": 186,
+  "capturedAt": "2026-05-22T15:38:21.661Z",
+  "itemCount": 184,
   "items": [
     {
       "id": "nov247684a",
@@ -282,14 +282,6 @@
       "price": "$65.00",
       "priceValue": 65,
       "discount": "35% off!"
-    },
-    {
-      "id": "jun240908d",
-      "title": "Daredevil By Chip Zdarsky Omnibus HC Vol 02",
-      "url": "https://www.instocktrades.com/products/jun240908d/daredevil-by-chip-zdarsky-omnibus-hc-vol-02",
-      "price": "$50.00",
-      "priceValue": 50,
-      "discount": "50% off!"
     },
     {
       "id": "jan240841",
@@ -1122,14 +1114,6 @@
       "price": "$48.75",
       "priceValue": 48.75,
       "discount": "35% off!"
-    },
-    {
-      "id": "feb248752d",
-      "title": "Star Wars the High Republic Quest of Jedi Omnibus HC",
-      "url": "https://www.instocktrades.com/products/feb248752d/star-wars-the-high-republic-quest-of-jedi-omnibus-hc",
-      "price": "$37.50",
-      "priceValue": 37.5,
-      "discount": "50% off!"
     },
     {
       "id": "feb248753",
