@@ -1,7 +1,7 @@
 {
   "monitorName": "Marvel Omnibus Catalog — InStockTrades",
-  "capturedAt": "2026-05-22T13:27:24.607Z",
-  "itemCount": 182,
+  "capturedAt": "2026-05-22T14:28:17.200Z",
+  "itemCount": 186,
   "items": [
     {
       "id": "nov247684a",
@@ -268,6 +268,14 @@
       "discount": "35% off!"
     },
     {
+      "id": "dec230750",
+      "title": "Daredevil By Chip Zdarsky Omnibus HC Vol 01",
+      "url": "https://www.instocktrades.com/products/dec230750/daredevil-by-chip-zdarsky-omnibus-hc-vol-01",
+      "price": "$65.00",
+      "priceValue": 65,
+      "discount": "35% off!"
+    },
+    {
       "id": "jun240908",
       "title": "Daredevil By Chip Zdarsky Omnibus HC Vol 02",
       "url": "https://www.instocktrades.com/products/jun240908/daredevil-by-chip-zdarsky-omnibus-hc-vol-02",
@@ -401,6 +409,14 @@
       "url": "https://www.instocktrades.com/products/oct240778/fantastic-four-doom-2099-omnibus-hc-pat-broderick-cvr",
       "price": "$97.50",
       "priceValue": 97.5,
+      "discount": "35% off!"
+    },
+    {
+      "id": "may240838",
+      "title": "Fantastic Four Omnibus HC Vol 05 Buckler CVR",
+      "url": "https://www.instocktrades.com/products/may240838/fantastic-four-omnibus-hc-vol-05-buckler-cvr",
+      "price": "$81.25",
+      "priceValue": 81.25,
       "discount": "35% off!"
     },
     {
@@ -932,6 +948,14 @@
       "discount": "35% off!"
     },
     {
+      "id": "jul254702",
+      "title": "Sentry Omnibus HC David Finch CVR",
+      "url": "https://www.instocktrades.com/products/jul254702/sentry-omnibus-hc-david-finch-cvr",
+      "price": "$81.25",
+      "priceValue": 81.25,
+      "discount": "35% off!"
+    },
+    {
       "id": "apr250686",
       "title": "She-Hulk By Rainbow Rowell Omnibus HC Jen Bartel CVR",
       "url": "https://www.instocktrades.com/products/apr250686/she-hulk-by-rainbow-rowell-omnibus-hc-jen-bartel-cvr",
@@ -969,6 +993,14 @@
       "url": "https://www.instocktrades.com/products/dec220812/spider-gwen-ghost-spider-omnibus-hc",
       "price": "$65.00",
       "priceValue": 65,
+      "discount": "35% off!"
+    },
+    {
+      "id": "sep221114",
+      "title": "Spider-Man 2099 Omnibus HC Vol 01 Leonardi CVR",
+      "url": "https://www.instocktrades.com/products/sep221114/spider-man-2099-omnibus-hc-vol-01-leonardi-cvr",
+      "price": "$97.50",
+      "priceValue": 97.5,
       "discount": "35% off!"
     },
     {
