@@ -1,7 +1,7 @@
 {
   "monitorName": "Marvel Omnibus Catalog — InStockTrades",
-  "capturedAt": "2026-05-22T17:43:34.228Z",
-  "itemCount": 184,
+  "capturedAt": "2026-05-22T18:48:42.291Z",
+  "itemCount": 185,
   "items": [
     {
       "id": "nov247684a",
@@ -1241,6 +1241,14 @@
       "url": "https://www.instocktrades.com/products/mar150783/ultimate-marvel-omnibus-hc-vol-01",
       "price": "$64.99",
       "priceValue": 64.99,
+      "discount": "35% off!"
+    },
+    {
+      "id": "may210696",
+      "title": "Ultimate Spider-Man Omnibus HC Vol 01 Quesada CVR New Ptg",
+      "url": "https://www.instocktrades.com/products/may210696/ultimate-spider-man-omnibus-hc-vol-01-quesada-cvr-new-ptg",
+      "price": "$81.25",
+      "priceValue": 81.25,
       "discount": "35% off!"
     },
     {
