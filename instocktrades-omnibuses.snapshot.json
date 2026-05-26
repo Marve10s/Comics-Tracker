@@ -1,7 +1,7 @@
 {
   "monitorName": "Marvel Omnibus Catalog — InStockTrades",
-  "capturedAt": "2026-05-26T14:35:46.009Z",
-  "itemCount": 182,
+  "capturedAt": "2026-05-26T15:59:41.703Z",
+  "itemCount": 184,
   "items": [
     {
       "id": "nov247684a",
@@ -519,6 +519,22 @@
       "id": "aug211271",
       "title": "Invaders Omnibus HC Kirby DM Var",
       "url": "https://www.instocktrades.com/products/aug211271/invaders-omnibus-hc-kirby-dm-var",
+      "price": "$81.25",
+      "priceValue": 81.25,
+      "discount": "35% off!"
+    },
+    {
+      "id": "nov254560",
+      "title": "Invincible Iron Man Omnibus HC Vol 04",
+      "url": "https://www.instocktrades.com/products/nov254560/invincible-iron-man-omnibus-hc-vol-04",
+      "price": "$81.25",
+      "priceValue": 81.25,
+      "discount": "35% off!"
+    },
+    {
+      "id": "nov254561",
+      "title": "Invincible Iron Man Omnibus HC Vol 04 Jack Kirby Cover [Dm Only]",
+      "url": "https://www.instocktrades.com/products/nov254561/invincible-iron-man-omnibus-hc-vol-04-jack-kirby-cover-[dm-only]",
       "price": "$81.25",
       "priceValue": 81.25,
       "discount": "35% off!"
