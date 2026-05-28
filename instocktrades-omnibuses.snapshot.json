@@ -1,7 +1,7 @@
 {
   "monitorName": "Marvel Omnibus Catalog — InStockTrades",
-  "capturedAt": "2026-05-28T17:26:28.094Z",
-  "itemCount": 181,
+  "capturedAt": "2026-05-28T18:28:34.406Z",
+  "itemCount": 180,
   "items": [
     {
       "id": "nov247684a",
@@ -1185,14 +1185,6 @@
       "url": "https://www.instocktrades.com/products/oct230899/thor-by-walter-simonson-omnibus-hc-new-ptg-2",
       "price": "$81.25",
       "priceValue": 81.25,
-      "discount": "35% off!"
-    },
-    {
-      "id": "oct254644",
-      "title": "Thunderbolts Dark Reign Omnibus HC Marko Djurdjevic Cover",
-      "url": "https://www.instocktrades.com/products/oct254644/thunderbolts-dark-reign-omnibus-hc-marko-djurdjevic-cover",
-      "price": "$97.50",
-      "priceValue": 97.5,
       "discount": "35% off!"
     },
     {
