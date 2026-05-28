@@ -1,7 +1,7 @@
 {
   "monitorName": "Marvel Omnibus Catalog — InStockTrades",
-  "capturedAt": "2026-05-28T14:22:07.168Z",
-  "itemCount": 182,
+  "capturedAt": "2026-05-28T15:58:07.528Z",
+  "itemCount": 181,
   "items": [
     {
       "id": "nov247684a",
@@ -1009,14 +1009,6 @@
       "url": "https://www.instocktrades.com/products/sep221114/spider-man-2099-omnibus-hc-vol-01-leonardi-cvr",
       "price": "$97.50",
       "priceValue": 97.5,
-      "discount": "35% off!"
-    },
-    {
-      "id": "sep230899",
-      "title": "Spider-Man 2099 Omnibus HC Vol 02 Bianchi CVR",
-      "url": "https://www.instocktrades.com/products/sep230899/spider-man-2099-omnibus-hc-vol-02-bianchi-cvr",
-      "price": "$81.25",
-      "priceValue": 81.25,
       "discount": "35% off!"
     },
     {
