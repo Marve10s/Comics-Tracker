@@ -1,7 +1,7 @@
 {
   "monitorName": "Marvel Omnibus Catalog — InStockTrades",
-  "capturedAt": "2026-05-27T21:43:45.638Z",
-  "itemCount": 183,
+  "capturedAt": "2026-05-28T06:58:52.170Z",
+  "itemCount": 182,
   "items": [
     {
       "id": "nov247684a",
@@ -1089,14 +1089,6 @@
       "url": "https://www.instocktrades.com/products/may250608/star-wars-doctor-aphra-friends-enemies-omnibus-hc-cvr",
       "price": "$37.50",
       "priceValue": 37.5,
-      "discount": "50% off!"
-    },
-    {
-      "id": "aug254872",
-      "title": "Star Wars Hidden Empire Omnibus HC Paulo Siqueira CVR",
-      "url": "https://www.instocktrades.com/products/aug254872/star-wars-hidden-empire-omnibus-hc-paulo-siqueira-cvr",
-      "price": "$62.50",
-      "priceValue": 62.5,
       "discount": "50% off!"
     },
     {
