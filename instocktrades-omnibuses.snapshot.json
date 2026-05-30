@@ -1,7 +1,7 @@
 {
   "monitorName": "Marvel Omnibus Catalog — InStockTrades",
-  "capturedAt": "2026-05-30T11:40:44.362Z",
-  "itemCount": 175,
+  "capturedAt": "2026-05-30T12:39:39.063Z",
+  "itemCount": 174,
   "items": [
     {
       "id": "nov247684a",
@@ -314,14 +314,6 @@
       "price": "$81.25",
       "priceValue": 81.25,
       "discount": "35% off!"
-    },
-    {
-      "id": "mar250619d",
-      "title": "Death of Captain Marvel Omnibus HC Vol 02",
-      "url": "https://www.instocktrades.com/products/mar250619d/death-of-captain-marvel-omnibus-hc-vol-02",
-      "price": "$62.50",
-      "priceValue": 62.5,
-      "discount": "50% off!"
     },
     {
       "id": "mar250608",
