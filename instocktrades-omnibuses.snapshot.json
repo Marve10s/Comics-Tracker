@@ -1,7 +1,7 @@
 {
   "monitorName": "Marvel Omnibus Catalog — InStockTrades",
-  "capturedAt": "2026-05-29T21:17:23.473Z",
-  "itemCount": 179,
+  "capturedAt": "2026-05-30T06:36:55.289Z",
+  "itemCount": 176,
   "items": [
     {
       "id": "nov247684a",
@@ -330,14 +330,6 @@
       "price": "$62.50",
       "priceValue": 62.5,
       "discount": "50% off!"
-    },
-    {
-      "id": "mar250620",
-      "title": "Death of Captain Marvel Omnibus HC Vol 02 DM Var",
-      "url": "https://www.instocktrades.com/products/mar250620/death-of-captain-marvel-omnibus-hc-vol-02-dm-var",
-      "price": "$81.25",
-      "priceValue": 81.25,
-      "discount": "35% off!"
     },
     {
       "id": "mar250608",
@@ -900,14 +892,6 @@
       "discount": "35% off!"
     },
     {
-      "id": "nov230675",
-      "title": "Rom the Original Marvel Years Omnibus HC Vol 02",
-      "url": "https://www.instocktrades.com/products/nov230675/rom-the-original-marvel-years-omnibus-hc-vol-02",
-      "price": "$81.25",
-      "priceValue": 81.25,
-      "discount": "35% off!"
-    },
-    {
       "id": "sep240930",
       "title": "Secret War By Bendis Omnibus HC Classic Costumes CVR",
       "url": "https://www.instocktrades.com/products/sep240930/secret-war-by-bendis-omnibus-hc-classic-costumes-cvr",
@@ -1001,14 +985,6 @@
       "url": "https://www.instocktrades.com/products/dec220812/spider-gwen-ghost-spider-omnibus-hc",
       "price": "$65.00",
       "priceValue": 65,
-      "discount": "35% off!"
-    },
-    {
-      "id": "sep221114",
-      "title": "Spider-Man 2099 Omnibus HC Vol 01 Leonardi CVR",
-      "url": "https://www.instocktrades.com/products/sep221114/spider-man-2099-omnibus-hc-vol-01-leonardi-cvr",
-      "price": "$97.50",
-      "priceValue": 97.5,
       "discount": "35% off!"
     },
     {
