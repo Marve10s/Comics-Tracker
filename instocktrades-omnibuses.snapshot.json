@@ -1,7 +1,7 @@
 {
   "monitorName": "Marvel Omnibus Catalog — InStockTrades",
-  "capturedAt": "2026-06-02T15:00:43.112Z",
-  "itemCount": 174,
+  "capturedAt": "2026-06-02T16:41:27.368Z",
+  "itemCount": 178,
   "items": [
     {
       "id": "nov247684a",
@@ -479,6 +479,22 @@
       "id": "may250612",
       "title": "Incredible Hulk Omnibus HC Vol 03",
       "url": "https://www.instocktrades.com/products/may250612/incredible-hulk-omnibus-hc-vol-03",
+      "price": "$81.25",
+      "priceValue": 81.25,
+      "discount": "35% off!"
+    },
+    {
+      "id": "oct254630",
+      "title": "Incredible Hulk Return of the Monster Omnibus HC Andrews Cover",
+      "url": "https://www.instocktrades.com/products/oct254630/incredible-hulk-return-of-the-monster-omnibus-hc-andrews-cover",
+      "price": "$81.25",
+      "priceValue": 81.25,
+      "discount": "35% off!"
+    },
+    {
+      "id": "oct254631",
+      "title": "Incredible Hulk Return of the Monster Omnibus HC Mike Deodato Jr Cover [Dm Only]",
+      "url": "https://www.instocktrades.com/products/oct254631/incredible-hulk-return-of-the-monster-omnibus-hc-mike-deodato-jr-cover-[dm-only]",
       "price": "$81.25",
       "priceValue": 81.25,
       "discount": "35% off!"
@@ -1241,6 +1257,22 @@
       "url": "https://www.instocktrades.com/products/jan250957/wolverine-goes-to-hell-omnibus-hc-jae-lee-cvr",
       "price": "$81.25",
       "priceValue": 81.25,
+      "discount": "35% off!"
+    },
+    {
+      "id": "nov254567",
+      "title": "Wolverine Not Dead Yet Omnibus HC Ian Churchill Cover [Dm Only]",
+      "url": "https://www.instocktrades.com/products/nov254567/wolverine-not-dead-yet-omnibus-hc-ian-churchill-cover-[dm-only]",
+      "price": "$97.50",
+      "priceValue": 97.5,
+      "discount": "35% off!"
+    },
+    {
+      "id": "nov254568",
+      "title": "Wolverine Not Dead Yet Omnibus HC Leinil Yu Cover",
+      "url": "https://www.instocktrades.com/products/nov254568/wolverine-not-dead-yet-omnibus-hc-leinil-yu-cover",
+      "price": "$97.50",
+      "priceValue": 97.5,
       "discount": "35% off!"
     },
     {
