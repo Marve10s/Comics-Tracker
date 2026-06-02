@@ -1,7 +1,7 @@
 {
   "monitorName": "Marvel Omnibus Catalog — InStockTrades",
-  "capturedAt": "2026-06-02T18:23:15.560Z",
-  "itemCount": 177,
+  "capturedAt": "2026-06-02T19:51:28.357Z",
+  "itemCount": 178,
   "items": [
     {
       "id": "nov247684a",
@@ -297,6 +297,14 @@
       "url": "https://www.instocktrades.com/products/apr240855/dazzler-omnibus-hc",
       "price": "$97.50",
       "priceValue": 97.5,
+      "discount": "35% off!"
+    },
+    {
+      "id": "jun250620",
+      "title": "Deadpool & X-Force Omnibus HC Greg Capullo DM Var",
+      "url": "https://www.instocktrades.com/products/jun250620/deadpool-x-force-omnibus-hc-greg-capullo-dm-var",
+      "price": "$65.00",
+      "priceValue": 65,
       "discount": "35% off!"
     },
     {
