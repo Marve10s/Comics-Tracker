@@ -1,7 +1,7 @@
 {
   "monitorName": "Marvel Omnibus Catalog — InStockTrades",
-  "capturedAt": "2026-06-02T16:41:27.368Z",
-  "itemCount": 178,
+  "capturedAt": "2026-06-02T18:23:15.560Z",
+  "itemCount": 177,
   "items": [
     {
       "id": "nov247684a",
@@ -31,9 +31,9 @@
       "id": "jun250617",
       "title": "Alpha Flight By Mantlo & Lee Omnibus HC Jim Lee CVR",
       "url": "https://www.instocktrades.com/products/jun250617/alpha-flight-by-mantlo-lee-omnibus-hc-jim-lee-cvr",
-      "price": "$81.25",
-      "priceValue": 81.25,
-      "discount": "35% off!"
+      "price": "$75.00",
+      "priceValue": 75,
+      "discount": "40% off!"
     },
     {
       "id": "oct230894",
@@ -55,17 +55,17 @@
       "id": "aug254848",
       "title": "Amazing Spider-Man By Zeb Wells Omnibus HC Vol 01",
       "url": "https://www.instocktrades.com/products/aug254848/amazing-spider-man-by-zeb-wells-omnibus-hc-vol-01",
-      "price": "$65.00",
-      "priceValue": 65,
-      "discount": "35% off!"
+      "price": "$60.00",
+      "priceValue": 60,
+      "discount": "40% off!"
     },
     {
       "id": "jun250615",
       "title": "Avengers By Johns & Coipel Omnibus HC David Finch CVR",
       "url": "https://www.instocktrades.com/products/jun250615/avengers-by-johns-coipel-omnibus-hc-david-finch-cvr",
-      "price": "$65.00",
-      "priceValue": 65,
-      "discount": "35% off!"
+      "price": "$60.00",
+      "priceValue": 60,
+      "discount": "40% off!"
     },
     {
       "id": "aug220975",
@@ -95,17 +95,17 @@
       "id": "aug254852",
       "title": "Avengers No Surrender/No Road Home Omnibus HC",
       "url": "https://www.instocktrades.com/products/aug254852/avengers-no-surrender-no-road-home-omnibus-hc",
-      "price": "$65.00",
-      "priceValue": 65,
-      "discount": "35% off!"
+      "price": "$60.00",
+      "priceValue": 60,
+      "discount": "40% off!"
     },
     {
       "id": "sep254797",
       "title": "Avengers Omnibus HC Vol 06",
       "url": "https://www.instocktrades.com/products/sep254797/avengers-omnibus-hc-vol-06",
-      "price": "$81.25",
-      "priceValue": 81.25,
-      "discount": "35% off!"
+      "price": "$75.00",
+      "priceValue": 75,
+      "discount": "40% off!"
     },
     {
       "id": "apr221097",
@@ -143,9 +143,9 @@
       "id": "sep254781",
       "title": "Black Widow & Captain America By Waid & Samnee Omnibus HC",
       "url": "https://www.instocktrades.com/products/sep254781/black-widow-captain-america-by-waid-samnee-omnibus-hc",
-      "price": "$65.00",
-      "priceValue": 65,
-      "discount": "35% off!"
+      "price": "$60.00",
+      "priceValue": 60,
+      "discount": "40% off!"
     },
     {
       "id": "nov230679",
@@ -255,9 +255,9 @@
       "id": "oct254619",
       "title": "Daken Dark Wolverine Omnibus HC Giuseppe Camuncoli CVR DM Var",
       "url": "https://www.instocktrades.com/products/oct254619/daken-dark-wolverine-omnibus-hc-giuseppe-camuncoli-cvr-dm-var",
-      "price": "$97.50",
-      "priceValue": 97.5,
-      "discount": "35% off!"
+      "price": "$90.00",
+      "priceValue": 90,
+      "discount": "40% off!"
     },
     {
       "id": "oct254620",
@@ -271,9 +271,9 @@
       "id": "jun240908",
       "title": "Daredevil By Chip Zdarsky Omnibus HC Vol 02",
       "url": "https://www.instocktrades.com/products/jun240908/daredevil-by-chip-zdarsky-omnibus-hc-vol-02",
-      "price": "$65.00",
-      "priceValue": 65,
-      "discount": "35% off!"
+      "price": "$60.00",
+      "priceValue": 60,
+      "discount": "40% off!"
     },
     {
       "id": "jan240841",
@@ -303,17 +303,17 @@
       "id": "jun250619",
       "title": "Deadpool & X-Force Omnibus HC Ken Lashley Greg Capullo CVR",
       "url": "https://www.instocktrades.com/products/jun250619/deadpool-x-force-omnibus-hc-ken-lashley-greg-capullo-cvr",
-      "price": "$65.00",
-      "priceValue": 65,
-      "discount": "35% off!"
+      "price": "$60.00",
+      "priceValue": 60,
+      "discount": "40% off!"
     },
     {
       "id": "mar250619",
       "title": "Death of Captain Marvel Omnibus HC Vol 02",
       "url": "https://www.instocktrades.com/products/mar250619/death-of-captain-marvel-omnibus-hc-vol-02",
-      "price": "$81.25",
-      "priceValue": 81.25,
-      "discount": "35% off!"
+      "price": "$75.00",
+      "priceValue": 75,
+      "discount": "40% off!"
     },
     {
       "id": "mar250608",
@@ -359,9 +359,9 @@
       "id": "aug254858",
       "title": "Excalibur Omnibus HC Vol 04",
       "url": "https://www.instocktrades.com/products/aug254858/excalibur-omnibus-hc-vol-04",
-      "price": "$81.25",
-      "priceValue": 81.25,
-      "discount": "35% off!"
+      "price": "$75.00",
+      "priceValue": 75,
+      "discount": "40% off!"
     },
     {
       "id": "oct240779",
@@ -479,22 +479,14 @@
       "id": "may250612",
       "title": "Incredible Hulk Omnibus HC Vol 03",
       "url": "https://www.instocktrades.com/products/may250612/incredible-hulk-omnibus-hc-vol-03",
-      "price": "$81.25",
-      "priceValue": 81.25,
-      "discount": "35% off!"
+      "price": "$75.00",
+      "priceValue": 75,
+      "discount": "40% off!"
     },
     {
       "id": "oct254630",
       "title": "Incredible Hulk Return of the Monster Omnibus HC Andrews Cover",
       "url": "https://www.instocktrades.com/products/oct254630/incredible-hulk-return-of-the-monster-omnibus-hc-andrews-cover",
-      "price": "$81.25",
-      "priceValue": 81.25,
-      "discount": "35% off!"
-    },
-    {
-      "id": "oct254631",
-      "title": "Incredible Hulk Return of the Monster Omnibus HC Mike Deodato Jr Cover [Dm Only]",
-      "url": "https://www.instocktrades.com/products/oct254631/incredible-hulk-return-of-the-monster-omnibus-hc-mike-deodato-jr-cover-[dm-only]",
       "price": "$81.25",
       "priceValue": 81.25,
       "discount": "35% off!"
@@ -535,9 +527,9 @@
       "id": "jul254685",
       "title": "Iron Man Armor Wars Omnibus HC Mark Bright CVR",
       "url": "https://www.instocktrades.com/products/jul254685/iron-man-armor-wars-omnibus-hc-mark-bright-cvr",
-      "price": "$65.00",
-      "priceValue": 65,
-      "discount": "35% off!"
+      "price": "$60.00",
+      "priceValue": 60,
+      "discount": "40% off!"
     },
     {
       "id": "nov200604",
@@ -631,9 +623,9 @@
       "id": "jul254688",
       "title": "Marvel Fanfare Omnibus HC Vol 02 Jim Starlin CVR",
       "url": "https://www.instocktrades.com/products/jul254688/marvel-fanfare-omnibus-hc-vol-02-jim-starlin-cvr",
-      "price": "$65.00",
-      "priceValue": 65,
-      "discount": "35% off!"
+      "price": "$60.00",
+      "priceValue": 60,
+      "discount": "40% off!"
     },
     {
       "id": "jul230820",
@@ -687,9 +679,9 @@
       "id": "may250610",
       "title": "Marvel Team-Up Omnibus HC Vol 01",
       "url": "https://www.instocktrades.com/products/may250610/marvel-team-up-omnibus-hc-vol-01",
-      "price": "$65.00",
-      "priceValue": 65,
-      "discount": "35% off!"
+      "price": "$60.00",
+      "priceValue": 60,
+      "discount": "40% off!"
     },
     {
       "id": "jun240911",
@@ -855,9 +847,9 @@
       "id": "may250601",
       "title": "Return of Wolverine Omnibus HC John Cassaday CVR",
       "url": "https://www.instocktrades.com/products/may250601/return-of-wolverine-omnibus-hc-john-cassaday-cvr",
-      "price": "$81.25",
-      "priceValue": 81.25,
-      "discount": "35% off!"
+      "price": "$75.00",
+      "priceValue": 75,
+      "discount": "40% off!"
     },
     {
       "id": "may250603",
@@ -919,9 +911,9 @@
       "id": "may250614",
       "title": "Secret Wars Battleworld Omnibus HC Vol 02 Simone Bianchi CVR",
       "url": "https://www.instocktrades.com/products/may250614/secret-wars-battleworld-omnibus-hc-vol-02-simone-bianchi-cvr",
-      "price": "$81.25",
-      "priceValue": 81.25,
-      "discount": "35% off!"
+      "price": "$75.00",
+      "priceValue": 75,
+      "discount": "40% off!"
     },
     {
       "id": "aug254865",
@@ -951,9 +943,9 @@
       "id": "apr250678",
       "title": "Shield By Hickman & Weaver Omnibus HC Gerald Parel CVR",
       "url": "https://www.instocktrades.com/products/apr250678/shield-by-hickman-weaver-omnibus-hc-gerald-parel-cvr",
-      "price": "$48.75",
-      "priceValue": 48.75,
-      "discount": "35% off!"
+      "price": "$45.00",
+      "priceValue": 45,
+      "discount": "40% off!"
     },
     {
       "id": "feb230911",
@@ -1055,9 +1047,9 @@
       "id": "sep254794",
       "title": "Star Wars Legends the Empire Omnibus HC Vol 04 Douglas Wheatley CVR",
       "url": "https://www.instocktrades.com/products/sep254794/star-wars-legends-the-empire-omnibus-hc-vol-04-douglas-wheatley-cvr",
-      "price": "$81.25",
-      "priceValue": 81.25,
-      "discount": "35% off!"
+      "price": "$75.00",
+      "priceValue": 75,
+      "discount": "40% off!"
     },
     {
       "id": "dec240857",
@@ -1119,9 +1111,9 @@
       "id": "jul254699",
       "title": "Superior Spider-Man Returns Omnibus HC Mark Bagley CVR",
       "url": "https://www.instocktrades.com/products/jul254699/superior-spider-man-returns-omnibus-hc-mark-bagley-cvr",
-      "price": "$81.25",
-      "priceValue": 81.25,
-      "discount": "35% off!"
+      "price": "$75.00",
+      "priceValue": 75,
+      "discount": "40% off!"
     },
     {
       "id": "feb250913",
@@ -1215,9 +1207,9 @@
       "id": "jul254705",
       "title": "Ultimate X-Men Omnibus HC Vol 03 Michael Turner CVR",
       "url": "https://www.instocktrades.com/products/jul254705/ultimate-x-men-omnibus-hc-vol-03-michael-turner-cvr",
-      "price": "$81.25",
-      "priceValue": 81.25,
-      "discount": "35% off!"
+      "price": "$75.00",
+      "priceValue": 75,
+      "discount": "40% off!"
     },
     {
       "id": "oct254648",
@@ -1343,9 +1335,9 @@
       "id": "apr250682",
       "title": "X-Men By Gerry Duggan Omnibus HC",
       "url": "https://www.instocktrades.com/products/apr250682/x-men-by-gerry-duggan-omnibus-hc",
-      "price": "$97.50",
-      "priceValue": 97.5,
-      "discount": "35% off!"
+      "price": "$90.00",
+      "priceValue": 90,
+      "discount": "40% off!"
     },
     {
       "id": "apr250685",
@@ -1359,9 +1351,9 @@
       "id": "apr250684",
       "title": "X-Men By Marc Guggenheim Omnibus HC Ken Lashley CVR",
       "url": "https://www.instocktrades.com/products/apr250684/x-men-by-marc-guggenheim-omnibus-hc-ken-lashley-cvr",
-      "price": "$97.50",
-      "priceValue": 97.5,
-      "discount": "35% off!"
+      "price": "$90.00",
+      "priceValue": 90,
+      "discount": "40% off!"
     },
     {
       "id": "may240843",
@@ -1407,9 +1399,9 @@
       "id": "aug254877",
       "title": "X-Men Road to Onslaught Omnibus HC Vol 2 Steve Geiger CVR",
       "url": "https://www.instocktrades.com/products/aug254877/x-men-road-to-onslaught-omnibus-hc-vol-2-steve-geiger-cvr",
-      "price": "$81.25",
-      "priceValue": 81.25,
-      "discount": "35% off!"
+      "price": "$75.00",
+      "priceValue": 75,
+      "discount": "40% off!"
     },
     {
       "id": "apr240861",
