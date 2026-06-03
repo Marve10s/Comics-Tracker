@@ -1,6 +1,6 @@
 {
   "monitorName": "Marvel Omnibus Catalog — InStockTrades",
-  "capturedAt": "2026-06-03T18:33:18.633Z",
+  "capturedAt": "2026-06-03T19:55:23.041Z",
   "itemCount": 174,
   "items": [
     {
@@ -167,14 +167,6 @@
       "id": "nov230677",
       "title": "Captain America By Nick Spencer Omnibus HC Vol 02",
       "url": "https://www.instocktrades.com/products/nov230677/captain-america-by-nick-spencer-omnibus-hc-vol-02",
-      "price": "$81.25",
-      "priceValue": 81.25,
-      "discount": "35% off!"
-    },
-    {
-      "id": "oct230892",
-      "title": "Captain America Omnibus HC Vol 01 New Ptg 2 Var",
-      "url": "https://www.instocktrades.com/products/oct230892/captain-america-omnibus-hc-vol-01-new-ptg-2-var",
       "price": "$81.25",
       "priceValue": 81.25,
       "discount": "35% off!"
@@ -1034,6 +1026,14 @@
       "price": "$75.00",
       "priceValue": 75,
       "discount": "40% off!"
+    },
+    {
+      "id": "apr250689",
+      "title": "Star Wars Legends the Old Republic Omnibus HC Vol 02 DM Var",
+      "url": "https://www.instocktrades.com/products/apr250689/star-wars-legends-the-old-republic-omnibus-hc-vol-02-dm-var",
+      "price": "$81.25",
+      "priceValue": 81.25,
+      "discount": "35% off!"
     },
     {
       "id": "dec240857",
