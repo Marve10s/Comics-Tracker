@@ -1,7 +1,7 @@
 {
   "monitorName": "Marvel Omnibus Catalog — InStockTrades",
-  "capturedAt": "2026-06-03T21:16:20.351Z",
-  "itemCount": 174,
+  "capturedAt": "2026-06-04T07:08:50.556Z",
+  "itemCount": 172,
   "items": [
     {
       "id": "nov247684a",
@@ -241,14 +241,6 @@
       "url": "https://www.instocktrades.com/products/oct254620/daken-dark-wolverine-omnibus-hc-leinil-yu-cvr",
       "price": "$97.50",
       "priceValue": 97.5,
-      "discount": "35% off!"
-    },
-    {
-      "id": "dec230750",
-      "title": "Daredevil By Chip Zdarsky Omnibus HC Vol 01",
-      "url": "https://www.instocktrades.com/products/dec230750/daredevil-by-chip-zdarsky-omnibus-hc-vol-01",
-      "price": "$65.00",
-      "priceValue": 65,
       "discount": "35% off!"
     },
     {
@@ -1026,14 +1018,6 @@
       "price": "$75.00",
       "priceValue": 75,
       "discount": "40% off!"
-    },
-    {
-      "id": "apr250689",
-      "title": "Star Wars Legends the Old Republic Omnibus HC Vol 02 DM Var",
-      "url": "https://www.instocktrades.com/products/apr250689/star-wars-legends-the-old-republic-omnibus-hc-vol-02-dm-var",
-      "price": "$81.25",
-      "priceValue": 81.25,
-      "discount": "35% off!"
     },
     {
       "id": "dec240857",
