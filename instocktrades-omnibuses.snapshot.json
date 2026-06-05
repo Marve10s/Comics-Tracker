@@ -1,7 +1,7 @@
 {
   "monitorName": "Marvel Omnibus Catalog — InStockTrades",
-  "capturedAt": "2026-06-05T19:13:13.572Z",
-  "itemCount": 172,
+  "capturedAt": "2026-06-05T20:16:48.737Z",
+  "itemCount": 171,
   "items": [
     {
       "id": "nov247684a",
@@ -1178,14 +1178,6 @@
       "price": "$81.25",
       "priceValue": 81.25,
       "discount": "35% off!"
-    },
-    {
-      "id": "oct254648d",
-      "title": "Uncanny X-Men By Kieron Gillen Omnibus HC",
-      "url": "https://www.instocktrades.com/products/oct254648d/uncanny-x-men-by-kieron-gillen-omnibus-hc",
-      "price": "$62.50",
-      "priceValue": 62.5,
-      "discount": "50% off!"
     },
     {
       "id": "sep254801",
