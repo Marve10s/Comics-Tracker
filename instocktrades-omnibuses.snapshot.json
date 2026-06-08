@@ -1,7 +1,7 @@
 {
   "monitorName": "Marvel Omnibus Catalog — InStockTrades",
-  "capturedAt": "2026-06-06T16:03:13.029Z",
-  "itemCount": 171,
+  "capturedAt": "2026-06-08T09:49:45.125Z",
+  "itemCount": 170,
   "items": [
     {
       "id": "nov247684a",
@@ -1306,14 +1306,6 @@
       "price": "$90.00",
       "priceValue": 90,
       "discount": "40% off!"
-    },
-    {
-      "id": "may240843",
-      "title": "X-Men Decimation Omnibus HC DM Var Esad Ribic DM Var",
-      "url": "https://www.instocktrades.com/products/may240843/x-men-decimation-omnibus-hc-dm-var-esad-ribic-dm-var",
-      "price": "$81.25",
-      "priceValue": 81.25,
-      "discount": "35% off!"
     },
     {
       "id": "may240842",
